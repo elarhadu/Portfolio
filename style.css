@@ -1229,6 +1229,15 @@ label {
     visibility: hidden;
   }
 
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    height: 100%;
+    width: 100%;
+  }
+
   .menu-bar {
     visibility: visible;
     float: left;
@@ -1388,6 +1397,8 @@ label {
     height: 218px;
     left: 55%;
     top: 394px;
+    display: flex;
+    flex-direction: column;
     background: rgba(26, 34, 54, 0.95);
     backdrop-filter: blur(12px);
     background-image: url(images/pointer.png);
@@ -1399,8 +1410,8 @@ label {
     position: absolute;
     width: 411px;
     height: 32px;
-    left: 89px;
-    top: 11px;
+    left: 67px;
+    top: -20px;
     font-family: "Poppins";
     font-style: normal;
     font-weight: 700;
@@ -1448,11 +1459,11 @@ label {
     text-align: center;
     background-color: #98dede;
     margin-right: 52px;
-    width: 77px;
+    width: 200px;
     height: 20px;
     line-height: 20px;
-    margin-top: 28px;
-    margin-left: -36px;
+    margin-top: 49px;
+    margin-left: 21px;
     font-family: Poppins;
     font-size: 10.3334px;
     font-weight: 300;
@@ -1823,12 +1834,33 @@ label {
     background: #1a2236;
   }
 
-  .footer {
-    position: absolute;
+  /*.footer {*/
+  /*  position: absolute;*/
+  /*  width: 100%;*/
+  /*  height: 123px;*/
+  /*  left: 0px;*/
+  /*  top: 4700px;*/
+  /*  background: #1a2236;*/
+  /*}*/
+  .reach-out {
+    margin-top: 4rem;
     width: 100%;
     height: 123px;
-    left: 0px;
-    top: 4700px;
-    background: #1a2236;
+    display: flex;
+    justify-content: center;
+  }
+
+  .social-media {
+    width: 25%;
+    margin-left: 33rem;
+    margin-top: -5%;
+  }
+
+  .social-media > li {
+
+  }
+
+  .footer-left-side {
+    margin-top: -2%;
   }
 }
