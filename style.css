@@ -229,7 +229,7 @@
 }
 
 .show-works:active {
-  transform: translateY(4px);
+  transform: translateY(5px);
 }
 
 .go-1 {
@@ -310,7 +310,7 @@
 }
 
 .buttons-2 :active {
-  transform: translateY(4px);
+  transform: translateY(5px);
 }
 
 .show-works-2 {
