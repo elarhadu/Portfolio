@@ -736,6 +736,10 @@
   backdrop-filter: blur(0.5px);
 }
 
+.others {
+  visibility: hidden;
+}
+
 .show-works-6 {
   box-sizing: border-box;
   color: #fff;
@@ -1324,8 +1328,8 @@ label {
     position: absolute;
     width: 160px;
     height: 160px;
-    left: 323px;
-    top: 1187px;
+    left: -175px;
+    top: -199px;
   }
 
   .project1 {
@@ -1377,6 +1381,86 @@ label {
     border: 1px solid rgba(255, 255, 255, 0.1);
   }
 
+  .others {
+    visibility: visible;
+    position: absolute;
+    width: 465px;
+    height: 218px;
+    left: 55%;
+    top: 394px;
+    background: rgba(26, 34, 54, 0.95);
+    backdrop-filter: blur(12px);
+    background-image: url(images/pointer.png);
+    background-position: 308px 129px;
+    background-repeat: no-repeat;
+  }
+
+  .other-project {
+    position: absolute;
+    width: 411px;
+    height: 32px;
+    left: 89px;
+    top: 11px;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 29px;
+    line-height: 80%;
+    color: #ffffff;
+  }
+  .show-other {
+    position: absolute;
+    width: 212px;
+    height: 51px;
+    left: 34px;
+    top: 122px;
+    background: white;
+  }
+
+  .go-others {
+    position: absolute;
+    width: 139px;
+    height: 27px;
+    left: 10px;
+    top: -32px;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    text-align: center;
+    color: #1a2236;
+  }
+
+  .arrow-others {
+    position: absolute;
+    width: 20.57px;
+    height: 15.35px;
+    left: 162px;
+    top: 15px;
+    color: white;
+    background: #1a2236;
+  }
+
+  #buttons-other {
+    float: left;
+    list-style: none;
+    text-align: center;
+    background-color: #98dede;
+    margin-right: 52px;
+    width: 77px;
+    height: 20px;
+    line-height: 20px;
+    margin-top: 28px;
+    margin-left: -36px;
+    font-family: Poppins;
+    font-size: 10.3334px;
+    font-weight: 300;
+    cursor: grab;
+    display: flex;
+    justify-content: space-around;
+  }
+
   .work-2 {
     visibility: hidden;
   }
@@ -1414,7 +1498,7 @@ label {
     position: absolute;
     width: 226.75px;
     height: 101.42px;
-    left: 729px;
+    left: 78.2%;
     top: 879px;
   }
 
@@ -1423,8 +1507,8 @@ label {
     position: absolute;
     width: 87.69px;
     height: 87.71px;
-    right: 777.31px;
-    top: 1075px;
+    right: 851.31px;
+    top: 1076px;
   }
 
   .project3 {
@@ -1465,7 +1549,7 @@ label {
     position: absolute;
     width: 465px;
     height: 270px;
-    left: 489px;
+    left: 55%;
     top: 610px;
     border: 1px solid rgba(255, 255, 255, 0.1);
   }
@@ -1474,7 +1558,7 @@ label {
     position: absolute;
     width: 465px;
     height: 253px;
-    left: 489px;
+    left: 55%;
     top: 351px;
     border: 1px solid rgba(255, 255, 255, 0.1);
   }
@@ -1520,7 +1604,7 @@ label {
     position: absolute;
     width: 62.02px;
     height: 62.02px;
-    right: 696.98px;
+    left: 196px;
     top: 1837px;
   }
 
@@ -1739,7 +1823,12 @@ label {
     background: #1a2236;
   }
 
-  .done {
-    visibility: hidden;
+  .footer {
+    position: absolute;
+    width: 100%;
+    height: 123px;
+    left: 0px;
+    top: 4700px;
+    background: #1a2236;
   }
 }
