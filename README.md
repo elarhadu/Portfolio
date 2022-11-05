@@ -1,6 +1,6 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Portfolio Setup (Mobile Version)
+# Portfolio Setup (Desktop Version)
 
 > This is a portfolio built with a figma template. It contains all about my current works as a software engineer.
 
@@ -11,22 +11,12 @@
 - CSS
 - VScode and GitHub
 
-
-## Getting Started
-
-To get a local copy up and running follow these simple example steps.
-
-### Prerequisites
-
-### Setup
-
-### Install
-
-### Usage
-
-### Run tests
-
-### Deployment
+## Getting started
+### How to install
+Follow the following steps to get this project on your local development environment <br>
+1. Install git on your pc (click here to [download](https://github.com/git-for-windows/git/releases/download/v2.38.1.windows.1/Git-2.38.1-64-bit.exe)) <br>
+2. Run the following command on cmd(windows) or terminal (Mac OS/ Linux) <br>
+<code>git clone git@github.com:elarhadu/Portfolio.git</code><br>and you're ready to go!!!
 
 
 

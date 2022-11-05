@@ -4,249 +4,306 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins&family=Rubik+Moonrocks&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
     <link
-      href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins&display=swap"
       rel="stylesheet"
+      href="path/to/font-awesome/css/font-awesome.min.css"
     />
+    <title>Portfolio</title>
   </head>
   <body>
-    <div class="container">
-      <header class="toolbar">
-        <menu>
-        <img src="images/image_geometry_1-1.png" alt="logo" class="shapes" />
-        <a><img src="images/ic_menu.png" alt="menu-bar" class="menu" /></a>
-        <ul class="menu-bar">
-            <li>Home</li>
+    <header>
+      <nav>
+        <div class="nav-mobil">
+          <img src="imgs/image_geometry_1.png" alt="image" />
+          <img src="imgs/ic_menu (1).png" alt="Menu" class="menu-icon" />
+        </div>
+        <div class="nav-desk">
+          <ul>
+            <li>Hello</li>
             <li>Portfolio</li>
             <li>About</li>
             <li>Contact</li>
-        </ul>
-        </menu>
-       
-      </header>
-      <br />
-      <section>
-        <h1 class="intro">Elarh<br />Adu</h1>
-        <br />
-        <article class="about-me">
-          <p class="intro1">
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <div class="container">
+      <section class="headline">
+        <div class="headline-cont">
+          <h1>Elarh Adu</h1>
+          <p>
             Hello! I am a software developer! I can help you build a product,
-            feature or website. Take a look at my works. If you like what you
-            see and have a project you need coded, do not hesitate and contact
+            feature or website. Take a look of my works. If you like what you
+            see and have a project you need coded, do not hesitate to contact
             me.
           </p>
-        </article>
-        <div class="contact-me">
-          <div class="contact-me">
-            <button class="step-1">Start Collaboration</button>
+          <button>Start collaboration</button>
+        </div>
+        <div class="headline-desk-img">
+          <img src="imgs/section-1.png" alt="" />
+        </div>
+      </section>
+      <img src="imgs/image_geometry_2.png" class="headline-img" />
+
+      <section class="projects grid-container">
+        <h2 class="item1">Projects</h2>
+
+        <div class="cart item2">
+          <img src="imgs/prj-img-1.png" alt="" class="item2-img" />
+          <div class="proj-cont">
+            <p>Project name goes here</p>
+            <ul>
+              <li>HTML/CSS</li>
+              <li>Ruby on Rais</li>
+              <li>JavaScript</li>
+            </ul>
+            <div class="project-butt">
+              <a href="#" class="text-butt">See this project</a>
+              <img src="imgs/Union.svg" class="img-butt" />
+              <img src="imgs/Union-mobil.png" class="img-butt-mob" />
+            </div>
           </div>
         </div>
-        <img src="images/image_geometry_2.png" alt="" class="arts" />
-        <img src="images/arts-1.png" alt="" class="arts-1">
-        <img src="images/image_dots.png" alt="" class="arts-2">
-      </section>
-    </div>
 
-    <section class="my-works">
-      <h2 class="display">Projects</h2>
-      <img src="images/image_dots.png" alt="" class="arts-3">
-      <img src="images/Rectangle 21.png" alt="" class="project1" />
-      <div class="works">
-        <h2 class="first-project">Project name goes here</h2>
-        <ul id="buttons-1">
-        <li>HTML/CSS</li> 
-          <li>Ruby on Rails</li>
-          <li>JavaScript</li>
-        </ul>
-          <button type="button" class="show-works">
-          <h6 class="go-1">See this project</h6> <img src="images/Union.png" alt="" class="arrow-1"> 
-          </button>
-
-          <div class="project-2">
-        <img src="images/Rectangle 22.png" alt="" class="project2">
-        <img src="images/shapes-5.png" alt="" class="arts-4">
-        <div class="work-2">
-        <h2 class="second-project">Project name goes here</h2>
-        <ul id="buttons-2">
-        <li>HTML/CSS</li> 
-          <li>Ruby on Rails</li>
-          <li>JavaScript</li>
-        </ul>
-          <button type="button" class="show-works-2">
-          <h6 class="go-2">See this project</h6> <img src="images/Union.png" alt="" class="arrow-2"> 
-          </button>     
-         </div>
-
-         <div class="project-3">
-      <img src="images/project 3.png" alt="" class="project3">
-      <div class="work-3">
- <h2 class="third-project">Project name goes here</h2>
-        <ul id="buttons-3">
-        <li>HTML/CSS</li> 
-          <li>Ruby on Rails</li>
-          <li>JavaScript</li>
-        </ul>
-          <button type="button" class="show-works-3">
-          <h6 class="go-3">See this project</h6> <img src="images/Union.png" alt="" class="arrow-3"> 
-          </button>
-                </div>
-
- <div class="project-4">
-      <img src="images/Project 4.png" alt="" class="project4">
-      <div class="work-4">
- <h2 class="forth-project">Project name goes here</h2>
-        <ul id="buttons-4">
-        <li>HTML/CSS</li> 
-          <li>Ruby on Rails</li>
-          <li>JavaScript</li>
-        </ul>
-          <button type="button" class="show-works-4">
-          <h6 class="go-4">See this project</h6> <img src="images/Union.png" alt="" class="arrow-4"> 
-          </button>
-         </div>
-
-         <div class="project-5">
-      <img src="images/Project 5.png" alt="" class="project5">
-      <div class="work-5">
- <h2 class="fifth-project">Project name goes here</h2>
-        <ul id="buttons-5">
-        <li>HTML/CSS</li> 
-          <li>Ruby on Rails</li>
-          <li>JavaScript</li>
-        </ul>
-          <button type="button" class="show-works-5">
-          <h6 class="go-5">See this project</h6> <img src="images/Union.png" alt="" class="arrow-5"> 
-          </button>
-         </div>
-
-         <div class="project-6">
-      <img src="images/Project 6.png" alt="" class="project6">
-      <img src="images/square.png" alt="" class="arts-5">
-      <img src="images/shapes-3.png" alt="" class="arts-6">
-      <img src="images/Group 83.png" alt="" class="arts-7">
-      <img src="images/shape-1.png" alt="" class="arts-8">
-      <img src="images/Shape.png" alt="" class="arts-9">
-      <img src="images/Group 51.png" alt="" class="arts-10">
-      <div class="work-6">
- <h2 class="sixth-project">Project name goes here</h2>
-        <ul id="buttons-6">
-        <li>HTML/CSS</li> 
-          <li>Ruby on Rails</li>
-          <li>JavaScript</li>
-        </ul>
-          <button type="button" class="show-works-6">
-          <h6 class="go-6">See this project</h6> <img src="images/Union.png" alt="" class="arrow-6"> 
-          </button>
-         </div>
-
-
-         <article class="about-me-1">
-      <h1 class="me-1">About</h1>
-      <p class="intro-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ea eiusmod</p>
-    <button type="button" class="cv"><h6 class="reference">Get my CV</h6><img src="images/ic_download.png" alt=""></button>
-    <div class="lang">
-      <strong class="technologies">Languages</strong> 
-      <ul class="part-1">
-        <li>JavaScript (ES5/ES6)</li>
-        <li>Ruby</li>
-        <li>HTML</li>
-        <li>CSS</li>
-      </ul>
-    </div>
-
-    <div class="lang">
-      <strong class="technologies">Languages</strong> 
-      <ul class="part-1">
-        <li>JavaScript (ES5/ES6)</li>
-        <li>Ruby</li>
-        <li>HTML</li>
-        <li>CSS</li>
-      </ul>
-    </div>
-
-    <div class="fm-works">
-      <strong class="frameworks">Frameworks</strong>
-      <ul class="part-2">
-        <li>Bootstrap</li>
-        <li>Ruby on rails</li>
-        <li>RSpec</li>
-        <li>Capibara</li>
-        <li>Selenium</li>
-      </ul>
-    </div>
-
-    <div class="talent">
-      <strong class="skills">Skills</strong>
-      <ul class="part-3">
-        <li>Codekit</li>
-        <li>Codepen</li>
-        <li>GitHub</li>
-        <li>GitLab</li>
-        <li>Terminal</li>
-      </ul>
-    </div>
-    </article>
-    </section>
-
-    <section class="contact">
-<nav class="end">
-            <img src="images/logo.png" alt="logo" class="end-logo">
-            <img src="images/logo-2.png" alt="" class="end-logo-1">
-            <h2 class="next-step">Get started</h2>
-            <p class="conclusion">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                 sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
-            <p class="conclusion-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-           <div class="form">
-        <form action="https://formspree.io/f/xzbwkgkl" method="POST" class="follow-up">
-            <label class="your-name">Your name</label>
-           <input class="name" type="text" name="name" placeholder="Anastasiia" required="" maxlength="30" ><br>
-           <label class="your-email">Your email</label>
-          <input class="email" type="email" name="Email address" placeholder="" required autofocus><br>
-          <textarea class="text-area" placeholder="Enter your message here..." required maxlength="500"></textarea>
-  <button type="submit" class="submit">Start Collaborating</button>
-</form>
-          </div>
-</nav>
-    </section>
-      </div>
-    </section>
-
-    <footer class="done">
-        <div class="reach-out">
-          <a href="#" target="_blank" class="resume footer-left-side"><h6>Get my resume </h6></a>
-          <a href="#" target="_blank" class="redirect footer-left-side"><img src="images/get.png" alt="" ></a>
-
-            <ul class="social-media">
-              <li>
-                <a href="#" target="_blank"><img src="images/ic_stackoverflow.png" alt="Stackoverflow"></a>
-              </li>
-               <li>
-                <a href="#" target="_blank"><img src="images/GitHub.png" alt="GitHub"></a>
-              </li>
-               <li>
-                <a href="#" target="_blank"><img src="images/Twitter.png" alt="Twitter"></a>
-              </li>
-               <li>
-                <a href="#" target="_blank"><img src="images/LinkedIn.png" alt="LinkedIn"></a>
-              </li>
-               <li>
-                <a href="#" target="_blank"><img src="images/Medium.png" alt="Medium"></a>
-              </li>
-               <li>
-                <a href="#" target="_blank"><img src="images/Angelist.png" alt="Angelist"></a>
-              </li>
+        <div class="cart item3">
+          <img src="imgs/prj-img-2.png" alt="" />
+          <div class="proj-cont">
+            <p>Project name goes here</p>
+            <ul>
+              <li>HTML/CSS</li>
+              <li>Ruby on Rais</li>
+              <li>JavaScript</li>
             </ul>
-    </footer>
+            <div class="project-butt">
+              <a href="#" class="text-butt">See this project</a>
+              <img src="imgs/Union.svg" class="img-butt" />
+              <img src="imgs/Union-mobil.png" class="img-butt-mob" />
+            </div>
+          </div>
+        </div>
+
+        <div class="item4">
+          <img src="imgs/item4.png" alt="" />
+        </div>
+
+        <div class="cart item5">
+          <img src="imgs/prj-img-3.png" alt="" />
+          <div class="proj-cont">
+            <p>Project name goes here</p>
+            <ul>
+              <li>HTML/CSS</li>
+              <li>Ruby on Rais</li>
+              <li>JavaScript</li>
+            </ul>
+            <div class="project-butt">
+              <a href="#" class="text-butt">See this project</a>
+              <img src="imgs/Union.svg" class="img-butt" />
+              <img src="imgs/Union-mobil.png" class="img-butt-mob" />
+            </div>
+          </div>
+        </div>
+
+        <div class="cart item6">
+          <img src="imgs/prj-img-4.png" alt="" />
+          <div class="proj-cont">
+            <p>Project name goes here</p>
+            <ul>
+              <li>HTML/CSS</li>
+              <li>Ruby on Rais</li>
+              <li>JavaScript</li>
+            </ul>
+            <div class="project-butt">
+              <a href="#" class="text-butt">See this project</a>
+              <img src="imgs/Union.svg" class="img-butt" />
+              <img src="imgs/Union-mobil.png" class="img-butt-mob" />
+            </div>
+          </div>
+        </div>
+
+        <div class="item7">
+          <!-- <img src="imgs/item7.png" alt="" /> -->
+        </div>
+
+        <div class="cart item8">
+          <img src="imgs/prj-img-5.png" alt="" />
+          <div class="proj-cont">
+            <p>Project name goes here</p>
+            <ul>
+              <li>HTML/CSS</li>
+              <li>Ruby on Rais</li>
+              <li>JavaScript</li>
+            </ul>
+            <div class="project-butt">
+              <a href="#" class="text-butt">See this project</a>
+              <img src="imgs/Union.svg" class="img-butt" />
+              <img src="imgs/Union-mobil.png" class="img-butt-mob" />
+            </div>
+          </div>
+        </div>
+
+        <div class="cart item9">
+          <img src="imgs/prj-img-6.png" alt="" />
+          <div class="proj-cont">
+            <p>Project name goes here</p>
+            <ul>
+              <li>HTML/CSS</li>
+              <li>Ruby on Rais</li>
+              <li>JavaScript</li>
+            </ul>
+            <div class="project-butt">
+              <a href="#" class="text-butt">See this project</a>
+              <img src="imgs/Union.svg" class="img-butt" />
+              <img src="imgs/Union-mobil.png" class="img-butt-mob" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="about">
+        <div class="about-text">
+          <h2>About</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ea eiusmod
+          </p>
+          <div class="about-butt">
+            <p class="about-butt-text">Get my CV</p>
+            <img src="imgs/ic_download.png" alt="" />
+          </div>
+        </div>
+
+        <div class="tech-grid tech-flex">
+          <div class="tech tech-1">
+            <div>
+              <h3>Languages</h3>
+              <ul>
+                <li>JavaScript (ES5/ES6)</li>
+                <li>Ruby</li>
+                <li>HTML</li>
+                <li>CSS</li>
+              </ul>
+            </div>
+            <img src="imgs/tech-img-1.png" alt="" />
+          </div>
+
+          <div class="tech tech-2">
+            <div>
+              <h3>Frameworks</h3>
+              <ul>
+                <li>Bootstrap</li>
+                <li>Ruby on rails</li>
+                <li>RSpec</li>
+                <li>Capibara</li>
+                <li>Selenium</li>
+              </ul>
+            </div>
+            <img src="imgs/tech-img-2.png" alt="" />
+          </div>
+
+          <div class="tech tech-3">
+            <div>
+              <h3>Skills</h3>
+              <ul>
+                <li>Codekit</li>
+                <li>Codepen</li>
+                <li>GitHub</li>
+                <li>GitLAb</li>
+                <li>Terminal</li>
+              </ul>
+            </div>
+            <img src="imgs/tech-img-3.png" alt="" />
+          </div>
+
+          <div class="tech-4 tech">
+            <img src="/imgs/image_dots.png" alt="" />
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer section  -->
+
+      <footer class="contact">
+        <div class="contact-desk">
+          <img src="imgs/footer-img.png" alt="" class="img-foter-mobile" />
+          <img src="imgs/footer-img-desk.png" alt="" class="img-foter-desk-1" />
+          <div>
+            <div>
+              <h2>Get started</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna.
+              </p>
+            </div>
+
+            <form action="https://formspree.io/f/xzbwkgkl" method="POST">
+              <ul class="grid-container">
+                <li>
+                  <label for="">Your name</label>
+                  <input
+                    type="text"
+                    id="name"
+                    name="username"
+                    maxlength="30"
+                    placeholder="Full name"
+                    required
+                  />
+                </li>
+                <li>
+                  <label for="">Your email</label>
+                  <input type="email" placeholder="Your email" required />
+                </li>
+                <li class="message">
+                  <label for="">Message</label>
+                  <textarea
+                    name="message"
+                    maxlength="500"
+                    cols="30"
+                    rows="10"
+                    required
+                  >
+Enter your message here..</textarea
+                  >
+                </li>
+                <li><button>Start collaboration</button></li>
+              </ul>
+            </form>
+          </div>
+
+          <div>
+            <img src="imgs/footer-2.png" alt="" class="img-foter-desk-2" />
+          </div>
+        </div>
+        <div class="contact-inf">
+          <div class="resume">
+            <p>Get my Resume</p>
+            <img src="imgs/ic_link_teal.png" alt="" />
+          </div>
+          <div class="socila-media">
+            <img src="imgs/social-1.png" alt="" />
+            <img src="imgs/social-2.png" alt="" />
+            <img src="imgs/social-3.png" alt="" />
+            <img src="imgs/social-4.png" alt="" />
+            <img src="imgs/social-5.png" alt="" />
+            <img src="imgs/social-6.png" alt="" />
+          </div>
+        </div>
+      </footer>
+    </div>
   </body>
 </html>
