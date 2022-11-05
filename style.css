@@ -686,7 +686,17 @@ body {
     background-size: 960px 558px;
   }
 
+  .item9 {
+    grid-column: 9 / -1;
+    grid-row: 2/4;
+    height: 350px;
+  }
+
   .item2:hover {
+    cursor: pointer;
+  }
+
+  .item9:hover {
     cursor: pointer;
   }
 
@@ -699,6 +709,19 @@ body {
     background-color: #1a2236;
     position: relative;
     top: 205px;
+  }
+
+  .item9:hover .proj-cont {
+    visibility: visible;
+    display: flex;
+    flex-direction: column;
+    width: 467px;
+    height: 218px;
+    background-color: #1a2236;
+    position: relative;
+    top: -290px;
+    left: 13px;
+    margin-top: 65px;
   }
 
   .about .about-butt .about-butt-text {
@@ -748,6 +771,20 @@ body {
     width: 754px;
   }
 
+  .item9:hover .proj-cont p {
+    visibility: visible;
+    color: #fff;
+    font-family: "Poppins", sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 40px;
+    margin-top: 20px;
+    padding: 0;
+    width: 300px;
+    margin-left: 15px;
+    margin-top: 30px;
+  }
+
   .item2:hover ul {
     visibility: visible;
     display: flex;
@@ -757,6 +794,18 @@ body {
     padding: 0;
     margin: 0 0 60px 60px;
     text-align: center;
+  }
+
+  .item9:hover ul {
+    visibility: visible;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: start;
+    padding: 0;
+    margin-left: 15px;
+    text-align: center;
+    margin-top: -6px;
   }
 
   .item2:hover ul li {
@@ -770,6 +819,18 @@ body {
     font-size: 20px;
   }
 
+  .item9:hover ul li {
+    visibility: visible;
+    list-style: none;
+    text-decoration: none;
+    background-color: #98dede;
+    color: #1a2236;
+    padding: 4px;
+    font-weight: 300;
+    font-size: 16px;
+    top: 4px;
+  }
+
   .item2:hover .project-butt {
     visibility: visible;
     display: flex;
@@ -781,10 +842,39 @@ body {
     border: 1px solid #fff;
   }
 
+  .item9:hover .project-butt {
+    visibility: visible;
+    display: flex;
+    align-items: center;
+    margin-left: 2px;
+    width: 200px;
+    height: 50px;
+    background: #fff;
+    border: 1px solid #fff;
+    margin-left: 15px;
+  }
+  .item9:hover .project-butt a {
+    visibility: visible;
+    text-decoration: none;
+    color: #1a2236;
+    font-weight: 300;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 10px;
+    margin: 2px;
+  }
+
   .item2:hover .project-butt .img-butt {
     visibility: visible;
     width: 20.57px;
     height: 15.35px;
+  }
+
+  .item9:hover .project-butt .img-butt {
+    visibility: visible;
+    width: 50px;
+    height: 15px;
   }
 
   .item3 img {
@@ -927,12 +1017,6 @@ body {
     grid-row: 3/4;
     height: 465px;
     position: relative;
-  }
-
-  .item9 {
-    grid-column: 9 / -1;
-    grid-row: 2/4;
-    height: 350px;
   }
 
   /* ***************About section ************/
