@@ -1,34 +1,22 @@
-.container {
-  width: 100%;
-  height: 568px;
+body {
+  margin: 0;
 }
 
 .toolbar {
-  width: 100%;
+  width: 320px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.shapes {
-  position: absolute;
-  width: 111px;
-  height: 74px;
-  left: 0;
-  top: 0;
+.menu-bar {
+  visibility: hidden;
 }
 
 .ic-menu {
-  position: absolute;
+  margin-right: 10px;
   width: 20px;
   height: 14px;
-  left: 284px;
-  top: 19px;
-  color: white;
-}
-
-.menu-bar {
-  visibility: hidden;
 }
 
 .intro {
@@ -37,13 +25,13 @@
   height: 100px;
   left: 16px;
   top: 104px;
-  font-family: "Playfair Display", serif;
+  font-family: "Playfair Display";
   font-style: normal;
   font-weight: 400;
   font-size: 50px;
   line-height: 100%;
   color: #1a2236;
-  margin: 10px;
+  margin: 0px;
 }
 
 .intro1 {
@@ -53,7 +41,7 @@
   height: 126px;
   left: 16px;
   top: 224px;
-  font-family: "Poppins", sans-serif;
+  font-family: "Poppins";
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -62,24 +50,13 @@
   color: #1a2236;
 }
 
-.contact-me {
-  font-family: "Poppins", sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 24px;
-  text-align: center;
-  color: #fff;
-  display: block;
-}
-
 .step-1 {
   box-sizing: border-box;
   position: absolute;
   width: 288px;
   height: 50px;
   left: -21px;
-  top: 390px;
+  top: 350px;
   background: #1a2236;
   border: none;
   padding: 15px 32px;
@@ -94,25 +71,11 @@
   cursor: pointer;
 }
 
-.arts {
-  position: absolute;
-  width: 320px;
+.logo {
   height: 160px;
-  left: 0;
-  top: 472px;
-}
-
-.arts-1 {
-  visibility: hidden;
-}
-
-.arts-container {
-  visibility: hidden;
-}
-
-.about-me {
-  width: 75%;
-  margin: auto;
+  width: 320px;
+  top: 440px;
+  position: absolute;
 }
 
 .display {
@@ -130,39 +93,20 @@
 }
 
 .project1 {
-  position: absolute;
   width: 320px;
   height: 186px;
-  left: 0;
-  top: 782px;
-  border: 0.333333px solid rgba(255, 255, 255, 0.1);
+  top: 779px;
+  position: absolute;
 }
 
-.works {
+.proj-1 {
+  display: flex;
+  flex-direction: column;
+  top: 964px;
   position: absolute;
   width: 320px;
-  height: 156px;
-  left: 0;
-  top: 940px;
+  height: 182px;
   background: #1a2236;
-  border: 0.333333px solid rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(0.5px);
-}
-
-.first-project {
-  position: absolute;
-  width: 264px;
-  height: 16px;
-  left: 4px;
-  top: 1px;
-  font-family: "Poppins", sans-serif;
-  font-style: normal;
-  font-size: 20px;
-  font-weight: 300;
-  line-height: 16px;
-  letter-spacing: 0;
-  text-align: left;
-  color: #fff;
 }
 
 #buttons-1 li {
@@ -174,29 +118,14 @@
   width: 77px;
   height: 20px;
   line-height: 20px;
-  margin-top: 28px;
+  margin-top: 36px;
   margin-left: -36px;
-  font-family: "Poppins", sans-serif;
+  font-family: Poppins;
   font-size: 10.3334px;
   font-weight: 300;
   cursor: grab;
   display: flex;
   justify-content: space-around;
-}
-
-.buttons-1 {
-  text-decoration: none;
-  color: #fff;
-  display: flex;
-  justify-content: baseline;
-}
-
-.buttons-1 :hover {
-  background-color: #33b5e5;
-}
-
-.buttons-1 :active {
-  transform: translateY(4px);
 }
 
 .show-works {
@@ -220,44 +149,18 @@
   line-height: 24px;
   letter-spacing: 0;
   text-align: center;
-}
-
-.show-works:active {
-  transform: translateY(4px);
+  background-image: url(images/Union.png);
+  background-position: 186px 18px;
+  background-repeat: no-repeat;
 }
 
 .go-1 {
-  position: relative;
-  top: -40px;
-}
-
-.arrow-1 {
-  left: 7px;
-  position: relative;
-  top: 14px;
-}
-
-.project2 {
+  top: -36px;
   position: absolute;
-  width: 320px;
-  height: 186px;
-  left: 0;
-  top: 156px;
-  border: 0.333333px solid rgba(255, 255, 255, 0.1);
+  left: 4px;
 }
 
-.work-2 {
-  position: absolute;
-  width: 320px;
-  height: 156px;
-  left: 0;
-  top: 343px;
-  background: #1a2236;
-  border: 0.333333px solid rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(0.5px);
-}
-
-.second-project {
+.first-project {
   position: absolute;
   width: 264px;
   height: 16px;
@@ -265,12 +168,29 @@
   top: 1px;
   font-family: "Poppins", sans-serif;
   font-style: normal;
-  font-weight: 300;
   font-size: 20px;
-  text-align: left;
-  letter-spacing: 0;
+  font-weight: 300;
   line-height: 16px;
+  letter-spacing: 0;
+  text-align: left;
   color: #fff;
+}
+
+.project2 {
+  width: 320px;
+  height: 186px;
+  top: 1144px;
+  position: absolute;
+}
+
+.work-2 {
+  display: flex;
+  flex-direction: column;
+  top: 1329px;
+  position: absolute;
+  width: 320px;
+  height: 182px;
+  background: #1a2236;
 }
 
 #buttons-2 li {
@@ -282,29 +202,14 @@
   width: 77px;
   height: 20px;
   line-height: 20px;
-  margin-top: 28px;
+  margin-top: 36px;
   margin-left: -36px;
-  font-family: "Poppins", sans-serif;
+  font-family: Poppins;
   font-size: 10.3334px;
   font-weight: 300;
   cursor: grab;
   display: flex;
   justify-content: space-around;
-}
-
-.buttons-2 {
-  text-decoration: none;
-  color: #fff;
-  display: flex;
-  justify-content: baseline;
-}
-
-.buttons-2 :hover {
-  background-color: #33b5e5;
-}
-
-.buttons-2 :active {
-  transform: translateY(4px);
 }
 
 .show-works-2 {
@@ -328,33 +233,18 @@
   line-height: 24px;
   letter-spacing: 0;
   text-align: center;
-}
-
-.show-works-2:active {
-  transform: translateY(4px);
+  background-image: url(images/Union.png);
+  background-position: 186px 18px;
+  background-repeat: no-repeat;
 }
 
 .go-2 {
-  position: relative;
-  top: -40px;
-}
-
-.arrow-2 {
-  left: 7px;
-  position: relative;
-  top: 14px;
-}
-
-.project3 {
+  top: -36px;
   position: absolute;
-  width: 320px;
-  height: 186px;
-  left: 0;
-  top: 498px;
-  border: 0.333333px solid rgba(255, 255, 255, 0.1);
+  left: 4px;
 }
 
-.third-project {
+.second-project {
   position: absolute;
   width: 264px;
   height: 16px;
@@ -362,12 +252,29 @@
   top: 1px;
   font-family: "Poppins", sans-serif;
   font-style: normal;
-  font-weight: 300;
   font-size: 20px;
-  text-align: left;
-  letter-spacing: 0;
+  font-weight: 300;
   line-height: 16px;
+  letter-spacing: 0;
+  text-align: left;
   color: #fff;
+}
+
+.project3 {
+  width: 320px;
+  height: 186px;
+  top: 1510px;
+  position: absolute;
+}
+
+.work-3 {
+  display: flex;
+  flex-direction: column;
+  top: 1695px;
+  position: absolute;
+  width: 320px;
+  height: 182px;
+  background: #1a2236;
 }
 
 #buttons-3 li {
@@ -379,40 +286,14 @@
   width: 77px;
   height: 20px;
   line-height: 20px;
-  margin-top: 28px;
+  margin-top: 36px;
   margin-left: -36px;
-  font-family: "Poppins", sans-serif;
+  font-family: Poppins;
   font-size: 10.3334px;
   font-weight: 300;
   cursor: grab;
   display: flex;
   justify-content: space-around;
-}
-
-.buttons-3 {
-  text-decoration: none;
-  color: white;
-  display: flex;
-  justify-content: baseline;
-}
-
-.buttons-3 :hover {
-  background-color: #33b5e5;
-}
-
-.buttons-3 :active {
-  transform: translateY(4px);
-}
-
-.work-3 {
-  position: absolute;
-  width: 320px;
-  height: 156px;
-  left: 0;
-  top: 685px;
-  background: #1a2236;
-  border: 0.333333px solid rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(0.5px);
 }
 
 .show-works-3 {
@@ -436,33 +317,18 @@
   line-height: 24px;
   letter-spacing: 0;
   text-align: center;
-}
-
-.show-works-3:active {
-  transform: translateY(4px);
+  background-image: url(images/Union.png);
+  background-position: 186px 18px;
+  background-repeat: no-repeat;
 }
 
 .go-3 {
-  position: relative;
-  top: -40px;
-}
-
-.arrow-3 {
-  left: 7px;
-  position: relative;
-  top: 14px;
-}
-
-.project4 {
+  top: -36px;
   position: absolute;
-  width: 320px;
-  height: 156px;
-  left: 0;
-  top: 841px;
-  border: 0.333333px solid rgba(255, 255, 255, 0.1);
+  left: 4px;
 }
 
-.forth-project {
+.third-project {
   position: absolute;
   width: 264px;
   height: 16px;
@@ -470,12 +336,29 @@
   top: 1px;
   font-family: "Poppins", sans-serif;
   font-style: normal;
-  font-weight: 300;
   font-size: 20px;
-  text-align: left;
-  letter-spacing: 0;
+  font-weight: 300;
   line-height: 16px;
+  letter-spacing: 0;
+  text-align: left;
   color: #fff;
+}
+
+.project4 {
+  width: 320px;
+  height: 186px;
+  top: 1875px;
+  position: absolute;
+}
+
+.work-4 {
+  display: flex;
+  flex-direction: column;
+  top: 2058px;
+  position: absolute;
+  width: 320px;
+  height: 182px;
+  background: #1a2236;
 }
 
 #buttons-4 li {
@@ -487,40 +370,14 @@
   width: 77px;
   height: 20px;
   line-height: 20px;
-  margin-top: 28px;
+  margin-top: 36px;
   margin-left: -36px;
-  font-family: "Poppins", sans-serif;
+  font-family: Poppins;
   font-size: 10.3334px;
   font-weight: 300;
   cursor: grab;
   display: flex;
   justify-content: space-around;
-}
-
-.buttons-4 {
-  text-decoration: none;
-  color: #fff;
-  display: flex;
-  justify-content: baseline;
-}
-
-.buttons-4 :hover {
-  background-color: #33b5e5;
-}
-
-.buttons-4 :active {
-  transform: translateY(4px);
-}
-
-.work-4 {
-  position: absolute;
-  width: 320px;
-  height: 156px;
-  left: 0;
-  top: 996px;
-  background: #1a2236;
-  border: 0.333333px solid rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(0.5px);
 }
 
 .show-works-4 {
@@ -544,33 +401,18 @@
   line-height: 24px;
   letter-spacing: 0;
   text-align: center;
-}
-
-.show-works-4:active {
-  transform: translateY(4px);
+  background-image: url(images/Union.png);
+  background-position: 186px 18px;
+  background-repeat: no-repeat;
 }
 
 .go-4 {
-  position: relative;
-  top: -40px;
-}
-
-.arrow-4 {
-  left: 7px;
-  position: relative;
-  top: 14px;
-}
-
-.project5 {
+  top: -36px;
   position: absolute;
-  width: 320px;
-  height: 156px;
-  left: 0;
-  top: 1152px;
-  border: 0.333333px solid rgba(255, 255, 255, 0.1);
+  left: 4px;
 }
 
-.fifth-project {
+.forth-project {
   position: absolute;
   width: 264px;
   height: 16px;
@@ -578,12 +420,29 @@
   top: 1px;
   font-family: "Poppins", sans-serif;
   font-style: normal;
-  font-weight: 300;
   font-size: 20px;
-  text-align: left;
-  letter-spacing: 0;
+  font-weight: 300;
   line-height: 16px;
+  letter-spacing: 0;
+  text-align: left;
   color: #fff;
+}
+
+.project5 {
+  width: 320px;
+  height: 186px;
+  top: 2238px;
+  position: absolute;
+}
+
+.work-5 {
+  display: flex;
+  flex-direction: column;
+  top: 2423px;
+  position: absolute;
+  width: 320px;
+  height: 182px;
+  background: #1a2236;
 }
 
 #buttons-5 li {
@@ -594,42 +453,15 @@
   margin-right: 52px;
   width: 77px;
   height: 20px;
-  color: #1a2236;
   line-height: 20px;
-  margin-top: 28px;
+  margin-top: 36px;
   margin-left: -36px;
-  font-family: "Poppins", sans-serif;
+  font-family: Poppins;
   font-size: 10.3334px;
   font-weight: 300;
   cursor: grab;
   display: flex;
   justify-content: space-around;
-}
-
-#buttons-5 {
-  text-decoration: none;
-  color: #fff;
-  display: flex;
-  justify-content: baseline;
-}
-
-.buttons-5 :hover {
-  background-color: #33b5e5;
-}
-
-.buttons-5 :active {
-  transform: translateY(4px);
-}
-
-.work-5 {
-  position: absolute;
-  width: 320px;
-  height: 156px;
-  left: 0;
-  top: 1308px;
-  background: #1a2236;
-  border: 0.333333px solid rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(0.5px);
 }
 
 .show-works-5 {
@@ -653,33 +485,18 @@
   line-height: 24px;
   letter-spacing: 0;
   text-align: center;
-}
-
-.show-works-5:active {
-  transform: translateY(4px);
+  background-image: url(images/Union.png);
+  background-position: 186px 18px;
+  background-repeat: no-repeat;
 }
 
 .go-5 {
-  position: relative;
-  top: -40px;
-}
-
-.arrow-5 {
-  left: 7px;
-  position: relative;
-  top: 14px;
-}
-
-.project6 {
+  top: -36px;
   position: absolute;
-  width: 320px;
-  height: 156px;
-  left: 0;
-  top: 1463px;
-  border: 0.333333px solid rgba(255, 255, 255, 0.1);
+  left: 4px;
 }
 
-.sixth-project {
+.fifth-project {
   position: absolute;
   width: 264px;
   height: 16px;
@@ -687,12 +504,29 @@
   top: 1px;
   font-family: "Poppins", sans-serif;
   font-style: normal;
-  font-weight: 300;
   font-size: 20px;
-  text-align: left;
-  letter-spacing: 0;
+  font-weight: 300;
   line-height: 16px;
+  letter-spacing: 0;
+  text-align: left;
   color: #fff;
+}
+
+.project6 {
+  width: 320px;
+  height: 186px;
+  top: 2602px;
+  position: absolute;
+}
+
+.work-6 {
+  display: flex;
+  flex-direction: column;
+  top: 2786px;
+  position: absolute;
+  width: 320px;
+  height: 182px;
+  background: #1a2236;
 }
 
 #buttons-6 li {
@@ -704,40 +538,14 @@
   width: 77px;
   height: 20px;
   line-height: 20px;
-  margin-top: 28px;
+  margin-top: 36px;
   margin-left: -36px;
-  font-family: "Poppins", sans-serif;
+  font-family: Poppins;
   font-size: 10.3334px;
   font-weight: 300;
   cursor: grab;
   display: flex;
   justify-content: space-around;
-}
-
-.buttons-6 {
-  text-decoration: none;
-  color: #fff;
-  display: flex;
-  justify-content: baseline;
-}
-
-.buttons-6:hover {
-  background-color: #33b5e5;
-}
-
-.buttons-6:active {
-  transform: translateY(4px);
-}
-
-.work-6 {
-  position: absolute;
-  width: 320px;
-  height: 156px;
-  left: 0;
-  top: 1639px;
-  background: #1a2236;
-  border: 0.333333px solid rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(0.5px);
 }
 
 .show-works-6 {
@@ -761,26 +569,31 @@
   line-height: 24px;
   letter-spacing: 0;
   text-align: center;
-}
-
-.show-works-6:active {
-  transform: translateY(4px);
+  background-image: url(images/Union.png);
+  background-position: 186px 18px;
+  background-repeat: no-repeat;
 }
 
 .go-6 {
-  position: relative;
-  top: -40px;
+  top: -36px;
+  position: absolute;
+  left: 4px;
 }
 
-.arrow-6 {
-  left: 7px;
-  position: relative;
-  top: 14px;
-}
-
-.about-me-1 {
-  display: flex;
-  justify-items: center;
+.sixth-project {
+  position: absolute;
+  width: 264px;
+  height: 16px;
+  left: 4px;
+  top: 1px;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 16px;
+  letter-spacing: 0;
+  text-align: left;
+  color: #fff;
 }
 
 .me-1 {
@@ -788,7 +601,7 @@
   width: 134px;
   height: 50px;
   left: 16px;
-  top: 1815px;
+  top: 2975px;
   font-family: "Playfair Display", serif;
   font-style: normal;
   font-weight: 400;
@@ -802,7 +615,7 @@
   width: 288px;
   height: 126px;
   left: 16px;
-  top: 1912px;
+  top: 3065px;
   font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -818,7 +631,7 @@
   width: 85%;
   height: 50px;
   left: 22px;
-  top: 2066px;
+  top: 3225px;
   background: #1a2236;
   display: flex;
   justify-content: center;
@@ -831,6 +644,9 @@
   text-align: center;
   color: #fff;
   border: 0;
+  background-image: url(images/ic_download.png);
+  background-position: 186px 11px;
+  background-repeat: no-repeat;
   gap: 10px;
 }
 
@@ -839,25 +655,12 @@
   width: 289px;
   height: 289px;
   left: 15px;
-  top: 2154px;
+  top: 3314px;
   background: #1c528a;
   background-image: url(images/ic_languages_mob.png);
   background-position: bottom right;
   background-repeat: no-repeat;
-}
-
-.technologies {
-  position: absolute;
-  width: 116px;
-  height: 30px;
-  left: 66px;
-  top: 50px;
-  font-family: "Poppins", sans-serif;
-  font-style: normal;
-  font-weight: 800;
-  font-size: 20px;
-  line-height: 30px;
-  color: #fff;
+  color: white;
 }
 
 .part-1 {
@@ -872,6 +675,20 @@
   font-size: 18px;
   line-height: 27px;
   letter-spacing: -0.0525em;
+  color: #fff;
+}
+
+.technologies {
+  position: absolute;
+  width: 116px;
+  height: 30px;
+  left: 66px;
+  top: 50px;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 30px;
   color: #fff;
 }
 
@@ -893,7 +710,7 @@
   position: absolute;
   width: 289px;
   height: 289px;
-  top: 2453px;
+  top: 3617px;
   left: 15px;
   background: #e2505c;
   background-image: url(images/frameworks.png);
@@ -920,7 +737,7 @@
   position: absolute;
   width: 289px;
   height: 289px;
-  top: 2753px;
+  top: 3920px;
   left: 15px;
   background: #febf52;
   background-image: url(images/ic_skills.png);
@@ -961,12 +778,8 @@
   position: absolute;
   width: 111px;
   height: 74.02px;
-  left: 0;
-  top: 4048px;
-}
-
-.end-logo-1 {
-  visibility: hidden;
+  left: 0px;
+  top: 4265px;
 }
 
 .next-step {
@@ -974,7 +787,7 @@
   width: 249px;
   height: 50px;
   left: 16px;
-  top: 4103px;
+  top: 4300px;
   font-family: "Playfair Display", serif;
   font-style: normal;
   font-weight: 400;
@@ -985,10 +798,10 @@
 
 .conclusion {
   position: absolute;
-  width: 288px;
+  width: 298px;
   height: 63px;
   left: 16px;
-  top: 4205px;
+  top: 4381px;
   font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -998,23 +811,11 @@
   color: #1a2236;
 }
 
-.conclusion-1 {
-  visibility: hidden;
-}
-
-.follow-up {
-  position: absolute;
-  width: 244px;
-  height: 52px;
-  left: -11px;
-  top: 60px;
-  border-radius: 4px;
-}
-
 .form {
   position: absolute;
-  top: 4300px;
-  left: 16px;
+  top: 4555px;
+  left: 14px;
+  width: 235px;
 }
 
 input {
@@ -1106,6 +907,10 @@ label {
   color: #7d7c84;
   padding-top: 33px;
   padding-inline: 0.6rem;
+  color: #1a2236;
+}
+.msg {
+  visibility: hidden;
 }
 
 .text-area {
@@ -1163,48 +968,39 @@ label {
   transform: translateY(4px);
 }
 
-.reach-out {
+.footer-left-side {
   position: absolute;
-  width: 320px;
-  height: 150px;
-  left: 0;
-  top: 4684px;
-  background: #1a2236;
-}
-
-.resume {
-  position: absolute;
-  width: 155px;
+  width: 127px;
   height: 24px;
-  left: 32px;
-  top: 12px;
-  font-family: " Poppins ", sans-serif;
+  left: 16px;
+  top: 10px;
+  font-family: "Poppins";
   font-style: normal;
   font-weight: 500;
-  font-size: 27px;
+  font-size: 24px;
   line-height: 24px;
   color: #92dcdc;
   text-decoration: none;
-  cursor: pointer;
-  transition: all 0.5s;
-}
-
-.redirect {
-  position: absolute;
-  width: 22px;
-  height: 22px;
-  left: 200px;
-  top: 54px;
 }
 
 .social-media {
   display: flex;
-  flex-direction: row;
   justify-content: space-around;
-  width: 94%;
-  margin-left: -1.5rem;
-  margin-bottom: 24.5rem;
+  align-items: center;
   list-style: none;
-  top: 94px;
+  gap: 22px;
   position: absolute;
+  top: 70px;
+}
+
+.footer {
+  position: absolute;
+  width: 320px;
+  height: 150px;
+  left: 0px;
+  top: 4832px;
+  background: #1a2236;
+  background-image: url(images/get.png);
+  background-position: 136px 46px;
+  background-repeat: no-repeat;
 }
