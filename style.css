@@ -778,7 +778,6 @@ body {
     font-size: 24px;
     font-weight: 700;
     line-height: 40px;
-    margin-top: 20px;
     padding: 0;
     width: 300px;
     margin-left: 15px;
@@ -846,13 +845,13 @@ body {
     visibility: visible;
     display: flex;
     align-items: center;
-    margin-left: 2px;
     width: 200px;
     height: 50px;
     background: #fff;
     border: 1px solid #fff;
     margin-left: 15px;
   }
+
   .item9:hover .project-butt a {
     visibility: visible;
     text-decoration: none;
