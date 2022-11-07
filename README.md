@@ -11,6 +11,10 @@
 - CSS
 - VScode and GitHub
 
+## Live Demo
+To view a live demo of this work, click [here](https://elarhadu.github.io/Portfolio/)
+
+
 ## Getting started
 ### How to install
 Follow the following steps to get this project on your local development environment <br>
