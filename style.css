@@ -279,7 +279,7 @@ body {
     margin: 0;
   }
 
-  .contact .contact-inf .socila-media img {
+  .contact .contact-inf .social-media img {
     width: 24px;
     height: 24px;
   }
@@ -498,7 +498,7 @@ body {
     gap: 16px;
   }
 
-  .contact .contact-inf .socila-media {
+  .contact .contact-inf .social-media {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -1267,14 +1267,14 @@ body {
     color: #92dcdc;
   }
 
-  .contact .contact-inf .socila-media {
+  .contact .contact-inf .social-media {
     display: flex;
     justify-content: space-around;
     align-items: center;
     gap: 32px;
   }
 
-  .contact .contact-inf .socila-media img {
+  .contact .contact-inf .social-media img {
     width: 24px;
     height: 24px;
     margin: 0;
