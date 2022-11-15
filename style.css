@@ -3,34 +3,102 @@ body {
 }
 
 @media (max-width: 767px) {
+
+
   .container {
     width: 100%;
-    height: 74px;
     height: 568px;
   }
 
-  .nav-mobil {
-    width: 320px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  li{
+    list-style: none;
   }
 
-  .nav-desk {
-    display: none;
+  a{
+    color: #1a2236;
+    text-decoration: none;
   }
 
-  .menu-icon {
-    margin-right: 10px;
-    width: 20px;
-    height: 14px;
-  }
+.navbar{
+  min-height: 70px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 5vw;
+}
+
+.nav-menu{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* gap: 60px; */
+}
+
+.nav.link{
+  transition: 0.7s ease;
+}
+
+.nav.link:hover{
+  text-decoration: underline;
+}
+
+.hamburger{
+  display: block;
+  cursor: pointer;
+}
+
+.hamburger.active .bar:nth-child(2){
+  opacity: 0;
+}
+
+.hamburger.active .bar:nth-child(1){
+  transform: translateY(8px) rotate(45deg);
+}
+.hamburger.active .bar:nth-child(3){
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+.nav-menu{
+  position: fixed;
+    left: -100%;
+    top: 71px;
+    gap: 0;
+    width: 37%;
+    height: 29%;
+    flex-direction: column;
+    background-color: white;
+    opacity: 1.5;
+    text-align: center;
+    transition: 0.3s;
+}
+
+
+.nav-item{
+  margin:16px 0
+}
+
+.nav-menu.active{
+  left: 0;
+}
+
+
+
+.bar{
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: #1a2236;
+}
 
   .headline .headline-cont {
     display: flex;
-    width: 320px;
+    width: 100%;
     flex-direction: column;
-    gap: 20px;
+    /* gap: 20px; */
     margin: 20px 16px 40px 16px;
   }
 
@@ -44,7 +112,7 @@ body {
 
   .headline-cont p {
     color: #1a2236;
-    width: 288px;
+    width: 90%;
     height: 126px;
     font-family: "Poppins", sans-serif;
     font-size: 14px;
@@ -61,7 +129,7 @@ body {
   .headline-cont button {
     border: none;
     font-family: "Poppins", sans-serif;
-    width: 288px;
+    width: 90%;
     height: 50px;
     font-size: 16px;
     font-weight: 500;
@@ -91,7 +159,7 @@ body {
 
   .headline-img {
     height: 160px;
-    width: 320px;
+    width: 100%;
   }
 
   .projects h2 {
@@ -108,14 +176,14 @@ body {
   }
 
   .cart img {
-    width: 320px;
+    width: 100%;
     height: 186px;
   }
 
   .proj-cont {
     display: flex;
     flex-direction: column;
-    width: 320px;
+    width: 100%;
     height: 156px;
     background-color: #1a2236;
   }
@@ -165,12 +233,12 @@ body {
   }
 
   .tech-flex .tech img {
-    width: 102px;
-    height: 102px;
+    width: 30%;
+    height: 25vw;
     position: absolute;
     right: 0;
     bottom: 0;
-  }
+}
 
   .proj-cont .project-butt a {
     text-decoration: none;
@@ -222,7 +290,7 @@ body {
 
   .container .about {
     margin: 56px 16px 50px 16px;
-    width: 288px;
+    width: 100%;
     display: flex;
     flex-direction: column;
     gap: 40px;
@@ -265,6 +333,7 @@ body {
     font-weight: 400;
     line-height: 21px;
     color: #1a2236;
+    width: 90%;
     font-style: normal;
     margin-bottom: 32px;
     margin-top: 0;
@@ -279,7 +348,7 @@ body {
     margin: 0;
   }
 
-  .contact .contact-inf .socila-media img {
+  .contact .contact-inf .social-media img {
     width: 24px;
     height: 24px;
   }
@@ -307,7 +376,7 @@ body {
   }
 
   .container .about-butt {
-    width: 288px;
+    width: 90%;
     height: 50px;
     background-color: #1a2236;
     border: 1px solid #1a2236;
@@ -333,7 +402,7 @@ body {
 
   .tech {
     position: relative;
-    width: 289px;
+    width: 90%;
     height: 289px;
   }
 
@@ -387,7 +456,7 @@ body {
 
   .contact {
     background: #f9f9fa;
-    width: 320px;
+    width: 100%;
   }
 
   .img-foter-desk-1 {
@@ -411,7 +480,7 @@ body {
   }
 
   .container .contact form {
-    width: 288px;
+    width: 100%;
     margin-bottom: 64px;
     margin-left: 16px;
   }
@@ -486,7 +555,7 @@ body {
     display: flex;
     gap: 30px;
     flex-direction: column;
-    width: 320px;
+    width: 100%;
     height: 150px;
     background: #1a2236;
   }
@@ -498,7 +567,7 @@ body {
     gap: 16px;
   }
 
-  .contact .contact-inf .socila-media {
+  .contact .contact-inf .social-media {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -515,38 +584,54 @@ body {
 
 /******************************** Desktop *************************** */
 
-@media (min-width: 1024px) {
+@media (min-width: 768px) {
   .container {
     max-width: 1440px;
     margin: auto;
   }
 
-  .nav-mobil {
+
+  .nav-branding{
     display: none;
   }
 
-  .nav-desk ul li {
+  li{
     list-style: none;
-    margin-right: 50px;
-    font-family: "Poppins", sans-serif;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 24px;
-    color: #1a2236;
-    border-bottom: 2px solid #fff;
-    position: relative;
-    padding: 5px;
   }
 
-  .nav-desk ul li:hover::before {
-    content: "";
-    cursor: pointer;
-    width: 40px;
-    height: 2px;
-    background-color: #1a2236;
-    position: absolute;
-    bottom: 0;
+  a{
+    color: #1a2236;
+    text-decoration: none;
   }
+a:hover{
+  text-decoration: underline;
+}
+
+
+
+.nav-menu{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  margin-left: 260px;
+  margin-right: 260px;
+}
+
+.nav.link{
+  transition: 0.7s ease;
+}
+
+.nav.link:hover{
+  text-decoration: underline;
+}
+
+.hamburger{
+  display: block;
+  cursor: pointer;
+}
+
+
 
   .tech div ul li {
     color: #fff;
@@ -581,6 +666,24 @@ body {
     margin: 32px auto;
     padding: 0;
   }
+
+  .hamburger{
+  display: block;
+  }
+
+.bar{
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  color: #1a2236;
+  left: 50px;
+}
+
+
+
 
   .headline {
     display: flex;
@@ -1267,14 +1370,14 @@ body {
     color: #92dcdc;
   }
 
-  .contact .contact-inf .socila-media {
+  .contact .contact-inf .social-media {
     display: flex;
     justify-content: space-around;
     align-items: center;
     gap: 32px;
   }
 
-  .contact .contact-inf .socila-media img {
+  .contact .contact-inf .social-media img {
     width: 24px;
     height: 24px;
     margin: 0;
