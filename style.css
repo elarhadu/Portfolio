@@ -41,6 +41,17 @@ body {
   cursor: pointer;
 }
 
+.bar{
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: #1a2236;
+}
+
+
 .hamburger.active .bar:nth-child(2){
   opacity: 0;
 }
@@ -84,18 +95,6 @@ body {
 
 .nav-menu.active{
   left: 0;
-}
-
-
-
-.bar{
-  display: block;
-  width: 25px;
-  height: 3px;
-  margin: 5px auto;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-  background-color: #1a2236;
 }
 
   .headline .headline-cont {
@@ -653,26 +652,26 @@ a:hover{
     margin-right: 0;
   }
 
-  header nav .nav-desk ul {
-    display: flex;
-    justify-content: center;
-    margin: 32px auto;
-    padding: 0;
+    header nav .nav-desk ul {
+      display: flex;
+      justify-content: center;
+      margin: 32px auto;
+      padding: 0;
   }
 
-  .hamburger{
-  display: block;
+    .hamburger{
+    display: block;
   }
 
-.bar{
-  display: block;
-  width: 25px;
-  height: 3px;
-  margin: 5px auto;
-  -webkit-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
-  color: #1a2236;
-  left: 50px;
+  .bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    color: #1a2236;
+    left: 50px;
 }
 
 
