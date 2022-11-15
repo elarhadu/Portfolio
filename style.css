@@ -28,6 +28,7 @@ body {
   padding-right: 5vw;
 }
 
+
 .nav.link{
   transition: 0.7s ease;
 }
@@ -594,6 +595,12 @@ body {
     margin: auto;
   }
 
+  .nav-menu{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-left: 15vw;
+  }
 
   .nav-branding{
     display: none;
