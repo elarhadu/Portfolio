@@ -573,6 +573,126 @@ body {
     align-items: center;
   }
 
+  /* .card-hidden {
+    display: none;
+    z-index: 101;
+  } */
+
+  .card-hidden.active{
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background-color: white;
+  }
+
+  .modal-container {
+    display: grid;
+    grid-template-rows: repeat(8, auto);
+    padding: 5vw;
+  }
+
+  .close-button {
+    grid-row: 1/2;
+    background: none;
+    border: none;
+    color: #1a2236;
+    font-size: 10vw;
+    display: flex;
+    justify-content: end;
+    padding-right: 1vw;
+    cursor: pointer;
+    margin-bottom: -5vw;
+  }
+
+  .modal-project-name {
+    grid-row: 2/3;
+    font-family: 'Poppins', sans-serif;
+    padding: 0 0 5vw 0;
+    color: #1a2236;
+    font-size: 5vw;
+    font-weight: 700;
+  }
+
+  .modal-languages {
+    grid-row: 3 / 4;
+    display: flex;
+    list-style: none;
+    gap: 10px;
+    font-family: "Poppins", sans-serif;
+    font-size: 12px;
+    font-weight: 200;
+    padding: 0;
+    margin-top: -8vw;
+  }
+  
+  .modal-languages li {
+    border: 1px black solid;
+    padding: 4px 6px;
+  }
+
+
+
+  .modal-image-container {
+    grid-row: 4/5;
+    width: 100%;
+  }
+
+  .modal-image-container img {
+    width: 100%;
+  }
+
+  .modal-image-preview {
+    grid-row: 5/6;
+    display: flex;
+    width: 100%;
+    padding: 0;
+    margin: -1vw 0;
+  }
+
+  .modal-image-preview img {
+    width: 25%;
+  }
+
+  .modal-paragraph {
+    grid-row: 6/7;
+    font-family: 'Poppins', sans-serif;
+    color: #1a2236;
+    line-height: 3vw;
+    font-size: 3vw;
+    padding: 5vw 0;
+  }
+
+  .modal-button-container {
+    grid-row: 7/8;
+    display: flex;
+    flex-direction: column;
+    margin-left: 15vw;
+  }
+
+  .modal-link-button {
+    text-decoration: none;
+    width: 200px;
+    text-align: center;
+    padding: 15px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    border: black solid 1px;
+    transition: 1s;
+  }
+
+  .modal-link-button a {
+    text-decoration: none;
+    color: #1a2236;
+    font-size: 4vw;
+    font-weight: 500;
+    line-height: 5vw;
+  }
+
+  .modal-link-button a img{
+    width: 5vw;
+  }
   /* .item2 {
     display: none;
   } */
@@ -580,6 +700,7 @@ body {
   .mg-butt-mob {
     color: red !important;
   }
+
 }
 
 /******************************** Desktop *************************** */
@@ -1368,4 +1489,119 @@ body {
   .img-butt-mob {
     display: none;
   }
+}
+.modal-container {
+  display: grid;
+  grid-template-rows: repeat(8, auto);
+  padding: 5vw;
+  box-sizing: border-box;
+  border: 5vw;
+  border-style:solid;
+  border-color: #1a2236;
+  width: 90%;
+  align-items: center;
+  justify-content: center;
+}
+
+.close-button {
+  grid-row: 1/2;
+  background: none;
+  border: none;
+  color: #1a2236;
+  font-size: 5vw;
+  display: flex;
+  justify-content: end;
+  padding-right: 1vw;
+  cursor: pointer;
+  margin-bottom: -10vw;
+}
+
+.modal-project-name {
+  grid-row: 2/3;
+  font-family: 'Poppins', sans-serif;
+  padding: 0 0 5vw 0;
+  color: #1a2236;
+  font-size: 5vw;
+  font-weight: 450;
+}
+
+.modal-languages {
+  grid-row: 3 / 4;
+  display: flex;
+  list-style: none;
+  gap: 10px;
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+  font-weight: 200;
+  padding: 0;
+  margin-top: -8vw;
+}
+
+.modal-languages li {
+  border: 1px black solid;
+  padding: 4px 6px;
+}
+
+
+
+.modal-image-container {
+  grid-row: 4/5;
+  width: 100%;  
+}
+
+.modal-image-container img {
+  width: 100%;
+}
+
+.modal-image-preview {
+  grid-row: 5/6;
+  display: flex;
+  width: 100%;
+  padding: 0;
+  margin: -1vw 0;
+}
+
+.modal-image-preview img {
+  width: 25%;
+}
+
+.modal-paragraph {
+  grid-row: 6/7;
+  font-family: 'Poppins', sans-serif;
+  color: #1a2236;
+  line-height: 17px;
+  font-size: 12px;
+  padding: 5vw 0;
+  text-align: center;
+}
+
+.modal-button-container {
+  grid-row: 7/8;
+  display: flex;
+  flex-direction: row;
+  margin-left: 15vw;
+  gap: 10vw;
+}
+
+.modal-link-button {
+  text-decoration: none;
+  width: 200px;
+  text-align: center;
+  padding: 15px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  border: black solid 1px;
+  transition: 1s;
+}
+
+.modal-link-button a {
+  text-decoration: none;
+  color: #1a2236;
+  font-size: 4vw;
+  font-weight: 500;
+  line-height: 5vw;
+}
+
+.modal-link-button a img{
+  width: 5vw;
 }

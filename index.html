@@ -84,7 +84,7 @@
               <li>JavaScript</li>
             </ul>
             <div class="project-butt" tabindex="0">
-              <a href="#" class="text-butt" tabindex="0">See this project</a>
+              <a href="javascript:openModal(0)" class="text-butt">See this project</a>
               <img src="imgs/Union.svg" class="img-butt" alt="right-arrow" />
               <img
                 src="imgs/Union-mobil.png"
@@ -105,7 +105,7 @@
               <li>JavaScript</li>
             </ul>
             <div class="project-butt" tabindex="0">
-              <a href="#" class="text-butt">See this project</a>
+              <a href="javascript:openModal(1)" class="text-butt">See this project</a>
               <img src="imgs/Union.svg" class="img-butt" alt="right-arrow" />
               <img
                 src="imgs/Union-mobil.png"
@@ -136,7 +136,7 @@
               <li>JavaScript</li>
             </ul>
             <div class="project-butt" tabindex="0">
-              <a href="#" class="text-butt">See this project</a>
+              <a href="javascript:openModal(2)" class="text-butt">See this project</a>
               <img src="imgs/Union.svg" class="img-butt" alt="right arrow" />
               <img
                 src="imgs/Union-mobil.png"
@@ -157,7 +157,7 @@
               <li>JavaScript</li>
             </ul>
             <div class="project-butt" tabindex="0">
-              <a href="#" class="text-butt">See this project</a>
+              <a href="javascript:openModal(0)" class="text-butt">See this project</a>
               <img src="imgs/Union.svg" class="img-butt" alt="right arrow" />
               <img
                 src="imgs/Union-mobil.png"
@@ -185,7 +185,7 @@
               <li>JavaScript</li>
             </ul>
             <div class="project-butt">
-              <a href="#" class="text-butt">See this project</a>
+              <a href="javascript:openModal(5)" class="text-butt">See this project</a>
               <img src="imgs/Union.svg" class="img-butt" alt="right arrow" />
               <img
                 src="imgs/Union-mobil.png"
@@ -209,7 +209,7 @@
               <li>JavaScript</li>
             </ul>
             <div class="project-butt" tabindex="0">
-              <a href="#" class="text-butt">See this project</a>
+              <a href="javascript:openModal(5)" class="text-butt">See this project</a>
               <img src="imgs/Union.svg" class="img-butt" alt="right arrow" />
               <img
                 src="imgs/Union-mobil.png"
@@ -286,6 +286,55 @@
           </div>
         </div>
       </section>
+
+
+      <!-- Modal Popup -->
+
+      <section id="modal" class="card-hidden">
+        <article class="modal-container">
+          <button onclick="closeModal(1)" class="close-button" type="button">&times;
+          </button>
+          <h2 class="modal-project-name" id="modal-project-name">
+            Project name goes here
+          </h2>
+          <ul class="modal-languages" id="modal-languages">
+            <li class="modal-links" id="modal-link" >HTML/CSS</li>
+            <li class="modal-links">Ruby on Rails</li>
+            <li class="modal-links">JavaScript</li>
+          </ul>
+          <div class="modal-image-container">
+            <img id="Picture" class="modal-project-image" src="imgs/prj-img-1.png"
+              alt="Laptop with colored screen">
+          </div>
+          <div class="modal-image-preview">
+            <img src="imgs/prj-img-1.png" alt="Laptop project 1">
+            <img src="imgs/prj-img-1.png" alt="Laptop project 2">
+            <img src="imgs/prj-img-1.png" alt="Laptop project 3">
+            <img src="imgs/prj-img-1.png" alt="Laptop project 4">
+          </div>
+    
+          <p class="modal-paragraph">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi vitae totam ut labore, iste illum cupiditate
+            magnam deleniti? Eveniet expedita adipisci explicabo nobis dolorum? Esse nesciunt assumenda id, maiores aliquam
+            tenetur doloremque explicabo eum, odio molestiae ea ipsum modi officia. <br><br>
+    
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam odio quas expedita dolorum voluptate quibusdam
+            laborum deleniti ipsum sapiente tempora. Provident ipsum iusto eum reiciendis pariatur praesentium nisi iste
+            doloremque.
+          </p>
+          <div class="modal-button-container">
+            <button class="modal-link-button" id="project-live">
+              <a href="#">See Live <img src="imgs/arrow.png" alt="link logo"></a>
+            </button> <br>
+            <button class="modal-link-button">
+              <a href="#">See Source <img src="imgs/Vector.png" alt="link logo"></a>
+            </button>
+          </div>
+          
+        </article>
+      </section>
+
+
 
       <!-- Footer section  -->
 
