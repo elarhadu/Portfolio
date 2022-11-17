@@ -9,3 +9,20 @@ document.querySelectorAll('.nav-link').forEach((n) => n.addEventListener('click'
   hamburger.classList.remove('active');
   navMenu.classList.remove('active');
 }));
+
+
+// Form Validation
+const form = document.querySelector(".form")
+const email = document.querySelector(".email")
+
+form.addEventListener('submit', (e) => {
+  e.preventDefault();
+
+  if (email.value !== email.value.toLowerCase() || email.value === '') {
+    errorMessage.textContent = 'Please enter your email in lower cases';
+    email.classList.add('invalid');
+    return;
+  }
+  email.classList.remove('invalid');
+  email.classList.add('valid');
+})
