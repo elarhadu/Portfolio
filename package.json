@@ -5,7 +5,8 @@
   "main": "script.js",
   "dependencies": {
     "corepack": "^0.14.2",
-    "npm": "^8.19.2"
+    "npm": "^8.19.2",
+    "postcss": "^8.4.19"
   },
   "devDependencies": {
     "babel-eslint": "^10.1.0",
