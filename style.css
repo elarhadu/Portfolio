@@ -573,10 +573,10 @@ body {
     align-items: center;
   }
 
-  /* .card-hidden {
+  .card-hidden {
     display: none;
     z-index: 101;
-  } */
+  }
 
   .card-hidden.active{
     display: flex;
