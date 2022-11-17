@@ -10,19 +10,16 @@ document.querySelectorAll('.nav-link').forEach((n) => n.addEventListener('click'
   navMenu.classList.remove('active');
 }));
 
-
 // Form Validation
-const form = document.querySelector("#form")
-const email = document.querySelector("#email")
-const error = document.getElementById("error")
+const form = document.querySelector('#form');
+const email = document.querySelector('#email');
+const error = document.getElementById('error');
 
 form.addEventListener('submit', (e) => {
-
   e.preventDefault();
   if (email.value !== email.value.toLowerCase() || email.value === '') {
     error.textContent = 'Please enter email in lower case';
     return;
   }
-
   form.submit();
-})
+});
