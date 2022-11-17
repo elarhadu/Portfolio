@@ -885,9 +885,6 @@ body {
     grid-column: 5 / 12;
     width: 960px;
     height: 558px;
-    background-image: url(imgs/prj-img-1.png);
-    background-repeat: no-repeat;
-    background-size: 960px 558px;
   }
 
   .item9 {
@@ -1487,9 +1484,10 @@ body {
   .img-butt-mob {
     display: none;
   }
-  /* .card-hidden {
+  .card-hidden {
     display: none;
-    z-index: 101;} */
+    z-index: 101;
+  }
 
   .card-hidden.active {
     display: flex;
