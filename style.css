@@ -523,6 +523,14 @@ body {
     margin: 4px 16px 8px 16px;
   }
 
+  .invalid {
+    border: red solid 1px;
+  }
+
+  .valid {
+    border: rgb(0, 163, 0) solid 1px;
+  }
+
   .container .contact form ul li textarea {
     font-family: "Poppins", serif;
     font-weight: 400;
@@ -1263,6 +1271,19 @@ body {
   .message {
     grid-column-start: 1;
     grid-column-end: 3;
+  }
+
+  .invalid {
+    border: red solid 1px;
+  }
+
+  .valid {
+    border: rgb(0, 163, 0) solid 1px;
+  }
+
+  #error {
+    font-family: "Poppins", sans-serif;
+    color: red;
   }
 
   .container .contact form ul li label {
