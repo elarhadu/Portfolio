@@ -12,17 +12,17 @@ document.querySelectorAll('.nav-link').forEach((n) => n.addEventListener('click'
 
 
 // Form Validation
-const form = document.querySelector(".form")
-const email = document.querySelector(".email")
+const form = document.querySelector("#form")
+const email = document.querySelector("#email")
+const error = document.getElementById("error")
 
 form.addEventListener('submit', (e) => {
-  e.preventDefault();
 
+  e.preventDefault();
   if (email.value !== email.value.toLowerCase() || email.value === '') {
-    errorMessage.textContent = 'Please enter your email in lower cases';
-    email.classList.add('invalid');
+    error.textContent = 'Please enter email in lower case';
     return;
   }
-  email.classList.remove('invalid');
-  email.classList.add('valid');
+
+  form.submit();
 })
