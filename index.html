@@ -310,13 +310,14 @@
               </p>
             </div>
 
-            <form action="https://formspree.io/f/xzbwkgkl" method="POST" tabindex="0">
+           
+            <form class="form" id="form" action="https://formspree.io/f/xzbwkgkl" method="POST" tabindex="0">
               <ul class="grid-container">
                 <li>
                   <label for="">Your name</label>
                   <input
                     type="text"
-                    id="name"
+                    id="username"
                     name="username"
                     maxlength="30"
                     placeholder="Full name"
@@ -326,7 +327,7 @@
                 </li>
                 <li>
                   <label for="">Your email</label>
-                  <input type="email" placeholder="Your email" required />
+                  <input type="email" placeholder="Your email" class="email" id="email" required />
                 </li>
                 <li class="message">
                   <label for="">Message</label>
@@ -338,11 +339,14 @@
                     required 
                     placeholder="Enter your message here.."
                     tabindex="0"
+                    id="message"
                   ></textarea>
                 </li>
-                <li><button type="button" tabindex="0">Start collaboration</button></li>
+                <div id="error"></div>
+                <li><button type="submit" tabindex="0">Start collaboration</button></li>
               </ul>
             </form>
+            
           </div>
 
           <div>
