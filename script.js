@@ -14,6 +14,8 @@ document.querySelectorAll('.nav-link').forEach((n) => n.addEventListener('click'
 const form = document.querySelector('#form');
 const email = document.querySelector('#email');
 const error = document.getElementById('error');
+const username = document.querySelector('#username');
+const message = document.querySelector('#message');
 
 form.addEventListener('submit', (e) => {
   e.preventDefault();
@@ -25,8 +27,7 @@ form.addEventListener('submit', (e) => {
 });
 
 // Local Storage
-const username = document.querySelector('#username');
-const message = document.querySelector('#message');
+
 
 function storeData() {
   const formData = {
@@ -34,10 +35,20 @@ function storeData() {
     email: email.value,
     message: message.value,
   };
-
   localStorage.setItem('formData', JSON.stringify(formData));
 }
 function getData() {
   if (!localStorage.getItem('formData')) {
     storeData();
   }
+  const localData = JSON.parse(localStorage.getItem('formData'));
+  username.setAttribute('value', localData.username);
+  email.setAttribute('value', localData.email);
+  message.textContent = localData.message;
+}
+
+getData();
+
+username.addEventListener('change', storeData);
+email.addEventListener('change', storeData);
+message.addEventListener('change', storeData);
