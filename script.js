@@ -28,7 +28,6 @@ form.addEventListener('submit', (e) => {
 
 // Local Storage
 
-
 function storeData() {
   const formData = {
     username: username.value,
