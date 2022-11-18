@@ -14,8 +14,7 @@ document.querySelectorAll('.nav-link').forEach((n) => n.addEventListener('click'
 const form = document.querySelector('#form');
 const email = document.querySelector('#email');
 const error = document.getElementById('error');
-const username = document.querySelector('#username');
-const message = document.querySelector('#message');
+
 
 form.addEventListener('submit', (e) => {
   e.preventDefault();
@@ -27,6 +26,9 @@ form.addEventListener('submit', (e) => {
 });
 
 // Local Storage
+
+const username = document.querySelector('#username');
+const message = document.querySelector('#message');
 
 function storeData() {
   const formData = {
