@@ -23,3 +23,21 @@ form.addEventListener('submit', (e) => {
   }
   form.submit();
 });
+
+// Local Storage
+const username = document.querySelector('#username');
+const message = document.querySelector('#message');
+
+function storeData() {
+  const formData = {
+    username: username.value,
+    email: email.value,
+    message: message.value,
+  };
+
+  localStorage.setItem('formData', JSON.stringify(formData));
+}
+function getData() {
+  if (!localStorage.getItem('formData')) {
+    storeData();
+  }
