@@ -1,37 +1,54 @@
+
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="path/to/font-awesome/css/font-awesome.min.css"
+    />
+    <title>Portfolio</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="style.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap"
-    rel="stylesheet" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap"
-    rel="stylesheet" />
-  <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css" />
-  <title>Portfolio</title>
-</head>
-
-<body>
-
-
-  <div class="container">
-
-    <header>
+  <body>
+    <header class="header">
       <nav class="navbar">
-        <img src="imgs/image_geometry_1.png" alt="image" class="nav-branding" />
+        <div class="nav-img">
+          <img
+            src="imgs/image_geometry_1.png"
+            alt="image"
+            class="nav-branding"
+          />
+        </div>
 
         <ul class="nav-menu">
-          <li class="nav-item"><a href="#Hello" class="nav-link">Hello</a></li>
-          <li class="nav-item"><a href="#Portfolio" class="nav-link">Portfolio</a></li>
-          <li class="nav-item"><a href="#About" class="nav-link">About</a></li>
-          <li class="nav-item"><a href="#Contact" class="nav-link">Contact</a></li>
+          <li class="nav-item">
+            <a href="#Hello" class="nav-link">Hello</a>
+          </li>
+          <li class="nav-item">
+            <a href="#Portfolio" class="nav-link">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a href="#About" class="nav-link">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="#Contact" class="nav-link">Contact</a>
+          </li>
         </ul>
 
         <div class="hamburger">
@@ -42,139 +59,42 @@
       </nav>
     </header>
 
-
-
-
     <section class="headline" tabindex="0" id="Hello">
       <div class="headline-cont">
-        <h1 tabindex="0">Elarh Adu</h1>
-        <p>
+        <h1 id="headline-title" tabindex="0">Elarh Adu</h1>
+        <p id="headline-text">
           Hello! I am a software developer! I can help you build a product,
-          feature or website. Take a look of my works. If you like what you
-          see and have a project you need coded, do not hesitate to contact
-          me.
+          feature or website. Take a look of my works. If you like what you see
+          and have a project you need coded, do not hesitate to contact me.
         </p>
-        <button type="button" tabindex="0">Start collaboration</button>
+        <button id="headline-btn" type="button" tabindex="0">
+          Start collaboration
+        </button>
       </div>
       <div class="headline-desk-img">
         <img src="imgs/section-1.png" alt="background-image" />
       </div>
     </section>
-    <img src="imgs/image_geometry_2.png" class="headline-img" />
+    <section class="geo-img">
+      <img src="imgs/image_geometry_2.png" alt="geometry" />
+    </section>
 
     <section class="projects grid-container" tabindex="0" id="Portfolio">
-      <h2 class="item1" tabindex="0">Projects</h2>
-
-      <!-- <div class="cart item2">
-        <img src="imgs/prj-img-1.png"
-          alt="Aerial view of someone typing on a laptop, an orange, notebook, a phone and a pen" class="item2-img" />
-        <div class="proj-cont">
-          <p tabindex="0">Project name goes here</p>
-          <ul>
-            <li>HTML/CSS</li>
-            <li>Ruby on Rais</li>
-            <li>JavaScript</li>
-          </ul>
-          <div class="project-butt" tabindex="0">
-            <a href="javascript:openModal(0)" class="text-butt">See this project</a>
-            <img src="imgs/Union.svg" class="img-butt" alt="right-arrow" />
-            <img src="imgs/Union-mobil.png" class="img-butt-mob" alt="right-arrow" />
-          </div>
-        </div>
-      </div> --> -->
-
-      <!-- <div class="cart item3" tabindex="0">
-        <img src="imgs/prj-img-2.png" alt="Snapshot of MacBook Pro 16" />
-        <div class="proj-cont" tabindex="0">
-          <p tabindex="0">Project name goes here</p>
-          <ul>
-            <li>HTML/CSS</li>
-            <li>Ruby on Rais</li>
-            <li>JavaScript</li>
-          </ul>
-          <div class="project-butt" tabindex="0">
-            <a href="javascript:openModal(1)" class="text-butt">See this project</a>
-            <img src="imgs/Union.svg" class="img-butt" alt="right-arrow" />
-            <img src="imgs/Union-mobil.png" class="img-butt-mob" alt="right-arrow" />
-          </div>
-        </div>
-      </div>
+      <h2 id="project-title" tabindex="0">Projects</h2>
 
       <div class="item4">
-        <img src="imgs/item4.png" alt="Colorful geometric shapes background-image" />
-      </div>
-
-      <div class="cart item5" tabindex="0">
-        <img src="imgs/prj-img-3.png" alt="Snapshot of a MacBook and Iphone" />
-        <div class="proj-cont" tabindex="0">
-          <p>Project name goes here</p>
-          <ul>
-            <li>HTML/CSS</li>
-            <li>Ruby on Rais</li>
-            <li>JavaScript</li>
-          </ul>
-          <div class="project-butt" tabindex="0">
-            <a href="javascript:openModal(2)" class="text-butt">See this project</a>
-            <img src="imgs/Union.svg" class="img-butt" alt="right arrow" />
-            <img src="imgs/Union-mobil.png" class="img-butt-mob" alt="right arrow" />
-          </div>
-        </div>
-      </div>
-
-      <div class="cart item6" tabindex="0">
-        <img src="imgs/prj-img-4.png" alt="Snapshot of a laptop" />
-        <div class="proj-cont">
-          <p>Project name goes here</p>
-          <ul>
-            <li>HTML/CSS</li>
-            <li>Ruby on Rais</li>
-            <li>JavaScript</li>
-          </ul>
-          <div class="project-butt" tabindex="0">
-            <a href="javascript:openModal(0)" class="text-butt">See this project</a>
-            <img src="imgs/Union.svg" class="img-butt" alt="right arrow" />
-            <img src="imgs/Union-mobil.png" class="img-butt-mob" alt="right arrow" />
-          </div>
-        </div>
+        <img
+          src="imgs/item4.png"
+          alt="Colorful geometric shapes background-image"
+        />
       </div>
 
       <div class="item7">
-        <img src="imgs/item7.png" alt="Colorful geometric shapes background-image" />
+        <img
+          src="imgs/item7.png"
+          alt="Colorful geometric shapes background-image"
+        />
       </div>
-
-      <div class="cart item8" tabindex="0">
-        <img src="imgs/prj-img-5.png" alt="Snapshot of a tilted laptop" />
-        <div class="proj-cont">
-          <p>Project name goes here</p>
-          <ul>
-            <li>HTML/CSS</li>
-            <li>Ruby on Rais</li>
-            <li>JavaScript</li>
-          </ul>
-          <div class="project-butt">
-            <a href="javascript:openModal(5)" class="text-butt">See this project</a>
-            <img src="imgs/Union.svg" class="img-butt" alt="right arrow" />
-            <img src="imgs/Union-mobil.png" class="img-butt-mob" alt="right arrow" />
-          </div>
-        </div>
-      </div>
-
-      <div class="cart item9">
-        <img src="imgs/prj-img-6.png" alt="Snapshot of a MacBook and Iphone" />
-        <div class="proj-cont" tabindex="0">
-          <p>Project name goes here</p>
-          <ul>
-            <li>HTML/CSS</li>
-            <li>Ruby on Rais</li>
-            <li>JavaScript</li>
-          </ul>
-          <div class="project-butt" tabindex="0">
-            <a href="javascript:openModal(5)" class="text-butt">See this project</a>
-            <img src="imgs/Union.svg" class="img-butt" alt="right arrow" />
-            <img src="imgs/Union-mobil.png" class="img-butt-mob" alt="right arrow" />
-          </div>
-        </div>
-      </div> -->
     </section>
 
     <section class="about" tabindex="0" id="About">
@@ -182,13 +102,15 @@
         <h2 tabindex="0">About</h2>
         <p tabindex="0">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-          ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
           aliquip ea eiusmod
         </p>
-        <div class="about-butt" tabindex="0">
-          <p class="about-butt-text" tabindex="0">Get my CV</p>
-          <img src="imgs/ic_download.png" alt="download icon" />
+        <div class="about-btn" tabindex="0">
+          <p id="about-btn-text" tabindex="0">Get my CV</p>
+          <div class="about-btn-img">
+            <img src="imgs/ic_download.png" alt="download icon" />
+          </div>
         </div>
       </div>
 
@@ -235,15 +157,17 @@
         </div>
 
         <div class="tech-4 tech">
-          <img src="imgs/image_dots.png" alt="an image with several black dots" />
+          <img
+            src="imgs/image_dots.png"
+            alt="an image with several black dots"
+          />
         </div>
       </div>
     </section>
 
-
     <!-- Modal Popup -->
-
-    <section id="modal" class="card-hidden">
+<!-- 
+    <section id="modal" class="overlay">
       <article class="modal-container">
         <button onclick="closeModal(1)" class="close-button" type="button">&times;
         </button>
@@ -288,67 +212,123 @@
           <a id="modal-next" href="#"> <span>Next Project</span><span class="arrow-2">&#8594</span></a>
         </div>
       </article>
-    </section>
-
-
+    </section>  -->
 
     <!-- Footer section  -->
 
     <footer class="contact" tabindex="0" id="Contact">
-      <div class="contact-desk">
-        <img src="imgs/footer-img.png" alt="a background-image" class="img-foter-mobile" />
-        <img src="imgs/footer-img-desk.png" alt="a background-image" class="img-foter-desk-1" />
-        <div>
-          <div>
-            <h2 tabindex="0">Get started</h2>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna.
-            </p>
-          </div>
-
-          <form action="https://formspree.io/f/xzbwkgkl" method="POST" tabindex="0">
-            <ul class="grid-container">
-              <li>
-                <label for="">Your name</label>
-                <input type="text" id="name" name="username" maxlength="30" placeholder="Full name" required
-                  tabindex="0" />
-              </li>
-              <li>
-                <label for="">Your email</label>
-                <input type="email" placeholder="Your email" required />
-              </li>
-              <li class="message">
-                <label for="">Message</label>
-                <textarea name="message" maxlength="500" cols="30" rows="10" required
-                  placeholder="Enter your message here.." tabindex="0"></textarea>
-              </li>
-              <li><button type="button" tabindex="0">Start collaboration</button></li>
-            </ul>
-          </form>
-        </div>
-
-        <div>
-          <img src="imgs/footer-2.png" alt="a colourful background-image" class="img-foter-desk-2" />
-        </div>
+      <div class="mobile-footer-img">
+        <img src="imgs/footer-img.png" alt="a background-image" />
       </div>
+      <div class="desk-footer-img">
+        <img src="imgs/footer-img-desk.png" alt="a background-image" />
+      </div>
+      <div class="contact-wrapper">
+        <h2 tabindex="0">Get started</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna.
+        </p>
+
+        <form
+          action="https://formspree.io/f/xzbwkgkl"
+          method="POST"
+          tabindex="0"
+        >
+          <div class="grid-container">
+            <div class="input_form">
+              <label for="">Your name</label>
+              <input
+                type="text"
+                id="name"
+                name="username"
+                maxlength="30"
+                placeholder="Full name"
+                required
+                tabindex="0"
+              />
+            </div>
+            <div class="input_form">
+              <label for="">Your email</label>
+              <input type="email" placeholder="Your email" required />
+            </div>
+            <div class="message">
+              <label for="">Message</label>
+              <textarea
+                name="message"
+                maxlength="500"
+                cols="30"
+                rows="10"
+                required
+                placeholder="Enter your message here.."
+                tabindex="0"
+              ></textarea>
+            </div>
+            <div>
+              <button type="button" tabindex="0">Start collaboration</button>
+            </div>
+          </div>
+        </form>
+      </div>
+
+      <div class="desk-footer-img-2">
+        <img src="imgs/footer-2.png" alt="a colourful background-image" />
+      </div>
+
       <div class="contact-inf">
         <div class="resume">
           <p tabindex="0">Get my Resume</p>
-          <img src="imgs/ic_link_teal.png" alt="a redirecting icon" />
+          <div class="res-img">
+            <img src="imgs/ic_link_teal.png" alt="a redirecting icon" />
+          </div>
         </div>
         <div class="social-media">
-          <img src="imgs/social-1.png" alt="stackoverflow social icon" tabindex="0" />
-          <img src="imgs/social-2.png" alt="GitHub social icon" tabindex="0" />
-          <img src="imgs/social-3.png" alt="Twitter social icon" tabindex="0" />
-          <img src="imgs/social-4.png" alt="LinkedIn social icon" tabindex="0" />
-          <img src="imgs/social-5.png" alt="Medium social icon" tabindex="0" />
-          <img src="imgs/social-6.png" alt="AngelList social icon" tabindex="0" />
+          <div class="social-img">
+            <img
+              src="imgs/social-1.png"
+              alt="stackoverflow social icon"
+              tabindex="0"
+            />
+          </div>
+          <div class="social-img">
+            <img
+              src="imgs/social-2.png"
+              alt="GitHub social icon"
+              tabindex="0"
+            />
+          </div>
+          <div class="social-img">
+            <img
+              src="imgs/social-3.png"
+              alt="Twitter social icon"
+              tabindex="0"
+            />
+          </div>
+          <div class="social-img">
+            <img
+              src="imgs/social-4.png"
+              alt="LinkedIn social icon"
+              tabindex="0"
+            />
+          </div>
+          <div class="social-img">
+            <img
+              src="imgs/social-5.png"
+              alt="Medium social icon"
+              tabindex="0"
+            />
+          </div>
+          <div class="social-img">
+            <img
+              src="imgs/social-6.png"
+              alt="AngelList social icon"
+              tabindex="0"
+            />
+          </div>
         </div>
       </div>
     </footer>
-  </div>
-  <script src="script.js"></script>
-</body>
 
+    <script src="script.js"></script>
+  </body>
 </html>

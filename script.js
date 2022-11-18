@@ -11,11 +11,12 @@ document.querySelectorAll('.nav-link').forEach((n) => n.addEventListener('click'
 }));
 
 // <!-- Modal View section  -->
+const modal = document.querySelector('#modal');
 
 const projectCard = [
   {
     id: 1,
-    projectTitle: 'Project #0',
+    projectTitle: 'Project name goes here',
     description: 'project#0 Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum molestias, quod recusandae asperiores similique quos aperiam aspernatur, ipsam autem fuga minima libero dolor accusantium corporis possimus quaerat repellat harum distinctio! Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum molestias, quod recusandae asperiores similique quos aperiam aspernatur, ipsam autem fuga minima libero dolor accusantium corporis possimus quaerat repellat harum distinctio!',
     mainImage: 'imgs/prj-img-1.png',
     images: ['imgs/prj-img-1.png', 'imgs/prj-img-2.png', 'imgs/prj-img-3.png', 'imgs/prj-img-4.png'],
@@ -26,7 +27,7 @@ const projectCard = [
 
   {
     id: 2,
-    projectTitle: 'Project #1',
+    projectTitle: 'Project name goes here',
     description: 'project#1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum molestias, quod recusandae asperiores similique quos aperiam aspernatur, ipsam autem fuga minima libero dolor accusantium corporis possimus quaerat repellat harum distinctio! Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum molestias, quod recusandae asperiores similique quos aperiam aspernatur, ipsam autem fuga minima libero dolor accusantium corporis possimus quaerat repellat harum distinctio!',
     mainImage: 'imgs/prj-img-2.png',
     images: ['imgs/prj-img-2.png', 'imgs/prj-img-1.png', 'imgs/prj-img-3.png', 'imgs/prj-img-6.png'],
@@ -37,7 +38,7 @@ const projectCard = [
 
   {
     id: 3,
-    projectTitle: 'Project #2',
+    projectTitle: 'Project name goes here',
     description: 'project#2 Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum molestias, quod recusandae asperiores similique quos aperiam aspernatur, ipsam autem fuga minima libero dolor accusantium corporis possimus quaerat repellat harum distinctio! Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum molestias, quod recusandae asperiores similique quos aperiam aspernatur, ipsam autem fuga minima libero dolor accusantium corporis possimus quaerat repellat harum distinctio!',
     mainImage: 'imgs/prj-img-3.png',
     images: ['imgs/prj-img-1.png', 'imgs/prj-img-3.png', 'imgs/prj-img-4.png', 'imgs/prj-img-5.png'],
@@ -48,7 +49,7 @@ const projectCard = [
 
   {
     id: 4,
-    projectTitle: 'Project #3',
+    projectTitle: 'Project name goes here',
     description: 'project#3 Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum molestias, quod recusandae asperiores similique quos aperiam aspernatur, ipsam autem fuga minima libero dolor accusantium corporis possimus quaerat repellat harum distinctio! Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum molestias, quod recusandae asperiores similique quos aperiam aspernatur, ipsam autem fuga minima libero dolor accusantium corporis possimus quaerat repellat harum distinctio!',
     mainImage: 'imgs/prj-img-4.png',
     images: ['imgs/prj-img-1.png', 'imgs/prj-img-2.png', 'imgs/prj-img-1.png'],
@@ -59,7 +60,7 @@ const projectCard = [
 
   {
     id: 5,
-    projectTitle: 'Project #4',
+    projectTitle: 'Project name goes here',
     description: 'project#4 Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum molestias, quod recusandae asperiores similique quos aperiam aspernatur, ipsam autem fuga minima libero dolor accusantium corporis possimus quaerat repellat harum distinctio! Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum molestias, quod recusandae asperiores similique quos aperiam aspernatur, ipsam autem fuga minima libero dolor accusantium corporis possimus quaerat repellat harum distinctio!',
     mainImage: 'imgs/prj-img-5.png',
     images: ['imgs/prj-img-5.png', 'imgs/prj-img-2.png', 'imgs/prj-img-1.png', 'imgs/prj-img-1.png'],
@@ -70,7 +71,7 @@ const projectCard = [
 
   {
     id: 6,
-    projectTitle: 'Project #5',
+    projectTitle: 'Project name goes here',
     description: 'project#5 Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum molestias, quod recusandae asperiores similique quos aperiam aspernatur, ipsam autem fuga minima libero dolor accusantium corporis possimus quaerat repellat harum distinctio! Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum molestias, quod recusandae asperiores similique quos aperiam aspernatur, ipsam autem fuga minima libero dolor accusantium corporis possimus quaerat repellat harum distinctio!',
     mainImage: 'imgs/prj-img-6.png',
     images: ['imgs/prj-img-1.png', 'imgs/prj-img-2.png', 'imgs/prj-img-1.png'],
@@ -80,27 +81,22 @@ const projectCard = [
   },
 ];
 
-const modal = document.querySelector('#modal');
-
 // eslint-disable-next-line no-return-assign
 projectCard.map((card, index) => document
   .getElementById('Portfolio').innerHTML += ` 
-  <div class="cart item2" id='card-${index}'>
-  <img src="${card.mainImage}"
-    alt="" />
-  <div class="proj-cont">
-    <p tabindex="0">${card.projectTitle}</p>
+  <div class="card" id='card-${index}'>
+  <img src="${card.mainImage}" alt="card-img" />
+  <div class="proj-content">
+    <h3 id="card-title" tabindex="0">${card.projectTitle}</h3>
     <ul>
-    ${card.technology.map((tech) => `
-    <div class="languages">
-      <div class="text">${tech}</div>
-    </div>
-    `)}
+    ${card.technology.map((tech) => `<li class="text">${tech}</li>
+
+    `).join('')}
     </ul>
-    <div class="project-butt" tabindex="0">
-      <a href="javascript:openModal(${index})" class="text-butt">See this project</a>
-      <img src="imgs/Union.svg" class="img-butt" alt="right-arrow" />
-      <img src="imgs/Union-mobil.png" class="img-butt-mob" alt="right-arrow" />
+    <div class="project-btn" tabindex="0">
+      <a href="javascript:openModal(${index})" class="text-btn">See this project</a>
+      <img src="imgs/Union.svg" class="img-btn" alt="right-arrow" />
+      <img src="imgs/Union-mobil.png" class="img-btn-mob" alt="right-arrow" />
     </div>
   </div>
 </div>
