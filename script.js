@@ -48,8 +48,8 @@ function getData() {
   message.textContent = localData.message;
 }
 
-getData();
+getData);
 
 username.addEventListener('change', storeData);
 email.addEventListener('change', storeData);
-message.addEventListener('change', storeData);
+message.addEventListener('change', storeData)
