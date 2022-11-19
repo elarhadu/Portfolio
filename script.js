@@ -1,4 +1,3 @@
-/* eslint-disable linebreak-style */
 const hamburger = document.querySelector('.hamburger');
 const navMenu = document.querySelector('.desktop-navigation');
 const body = document.querySelector('body');
@@ -87,11 +86,10 @@ const projectCard = [
 
 const modal = document.querySelector('#modal');
 
-// eslint-disable-next-line no-return-assign
-projectCard.map((card, index) => document
-  .getElementById('desktop-portfolio').innerHTML += `
+projectCard.forEach((card, index) => {
+  document
+    .getElementById('desktop-portfolio').innerHTML += `
     <article class="container2 desktop-project-1" id='card-${index}'>
-
         <img class="images img-${index}" src="${card.mainImage}" alt="A deccorative laptop background">
         <div class="description-container desc-container-${index}">
           <h3 class="project-name project-name-${index}">${card.projectTitle}</h3>
@@ -108,7 +106,8 @@ projectCard.map((card, index) => document
           </div>
         </div>
       </article>
-    `);
+    `;
+});
 
 function openModal(num = null) {
   if (num != null) {
@@ -162,8 +161,6 @@ form.addEventListener('submit', (e) => {
 
   form.submit();
 });
-
-// Local storage for form input
 
 function storeData() {
   const formData = {
