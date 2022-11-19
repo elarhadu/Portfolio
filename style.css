@@ -63,10 +63,10 @@
     margin-bottom: 5px;
   }
 
-
   .no-scroll {
     overflow-y: hidden;
-    
+  }
+
   .nav-menu {
     position: fixed;
     left: -100%;
