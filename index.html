@@ -1,234 +1,333 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="path/to/font-awesome/css/font-awesome.min.css"
+    />
+    <title>Portfolio</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
-  <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
-</head>
+  <body>
+    <header class="header">
+      <nav class="navbar">
+        <div class="nav-img">
+          <img
+            src="imgs/image_geometry_1.png"
+            alt="image"
+            class="nav-branding"
+          />
+        </div>
 
-<body>
-  <header>
-    <ul class="desktop-navigation">
-      <li class="margin-top nav-item"><a href="#desktop-hello" class="nav-link">Hello</a></li>
-      <li class="nav-item"><a href="#desktop-portfolio" class="nav-link">Portfolio</a></li>
-      <li class="nav-item"><a href="#desktop-about" class="nav-link">About</a></li>
-      <li class="nav-item"><a href="#desktop-contact" class="nav-link">Contact</a></li>
-    </ul>
-    <div class="hamburger">
-      <span class="bar"></span>
-      <span class="bar"></span>
-      <span class="bar"></span>
-    </div>
-  </header>
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <a href="#Hello" class="nav-link">Hello</a>
+          </li>
+          <li class="nav-item">
+            <a href="#Portfolio" class="nav-link">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a href="#About" class="nav-link">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="#Contact" class="nav-link">Contact</a>
+          </li>
+        </ul>
 
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </nav>
+    </header>
 
-  <main>
-    <section class="heading desktop-container-hello" id="desktop-hello">
-
-      <h1 id="name" class="desktop-name">
-        Elarh Adu
-      </h1>
-      <p id="intro-heading" class="desktop-intro">
-        Hello! I am a software developer! I can help you build a product,
+    <section class="headline" tabindex="0" id="Hello">
+      <div class="headline-cont">
+        <h1 id="headline-title" tabindex="0">Elarh Adu</h1>
+        <p id="headline-text">
+          Hello! I am a software developer! I can help you build a product,
           feature or website. Take a look of my works. If you like what you see
           and have a project you need coded, do not hesitate to contact me.
-      </p>
-      <button class="button animate__button">
-        <a class="btn" href="">Start collaboraton</a>
-      </button>
-      <img id="dot-image" src="imgs/image_dots.png" alt="Geometrical dots background">
-
-      <img class="desktop-image-header" src="imgs/section-1.png" alt="A geomertrical background">
-    </section>
-    
-    <section id="desktop-portfolio" class="desktop-container-grid">
-      <img class="images desktop-none" src="images/image_geometry_2.svg" alt="geometrical background">
-      <h2 id="projects" class="desktop-projets-heading-1 projects">
-        Projects
-      </h2>
-
-      <img class="images none-mobile desktop-project-7" src="images/image_dots.svg"
-        alt="dots geometrical pattern background">
-
-
-      <img class="images none-mobile desktop-geometry-01" src="img/image-geometry_2.svg"
-        alt="geometrical patterns background">
-
-
-      <img class="images none-mobile desktop-geometry-02" src="img/Group 83.svg" alt="Geometricla shapes background">
-      <img class="images none-mobile desktop-geometry-3" src="img/Shape.svg" alt="Geometricla shapes background">
-      <img class="images none-mobile desktop-geometry-4" src="img/image-geometry_5.svg"
-        alt="Geometrical shapes background">
-      <img class="images none-mobile desktop-geometry-5" src="img/image-geometry_4.svg"
-        alt="Geometrical shapes background">
-          </section>
-
-        <section id="desktop-about" class="desktop-container-about">
-      <article class="container3 desktop-about-section">
-        <h2 class="about desktop-about-title">
-          About
-        </h2>
-        <p class="myintro desktop-my-intro">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          Ut enim ad minim veniam,
-          quis nostrud exercitation ullamco laboris nisi ut aliquip ea eiusmod
         </p>
-        <div class="button deskop-button animate__button">
-          <div class="btn desktop-btn" id="unique">Get my CV</div>
-          <div class="ic desktop-ic">
-            <a href="#" id="cv-image"><img src="img/ic_download.png" alt="cv download icon"></a>
-          </div>
-        </div>
-      </article>
-
-      <article class="container4 desktop-languages-section">
-        <h3 class="title-about desktop-title-about">Languages</h3>
-        <div class="list desktop-list">
-          <ul>
-            <li>JavaScript(ES5/ES6)</li>
-            <li>Ruby</li>
-            <li>HTML</li>
-            <li>CSS</li>
-          </ul>
-        </div>
-      </article>
-
-      <article class="container5 desktop-frameworks-section">
-        <h3 class="title-about desktop-title-about">Frameworks</h3>
-        <div class="list desktop-list">
-          <ul>
-            <li>Bootstrap</li>
-            <li>Ruby on rails</li>
-            <li>RSpec</li>
-            <li>Capibara</li>
-            <li>Selenium</li>
-
-          </ul>
-        </div>
-      </article>
-
-      <article class="container6 desktop-skills-section">
-        <h3 class="title-about desktop-title-about">Skills</h3>
-        <div class="list desktop-list">
-          <ul>
-            <li>Codekit</li>
-            <li>Codepen</li>
-            <li>Github</li>
-            <li>Gitlab</li>
-            <li>Terminal</li>
-          </ul>
-        </div>
-      </article>
-      <img class="none-mobile desktop-image-with-dots-teal" src="img/image_dots_with_teal.svg" alt="dots with teal">
-    </section>
-    
-    <section class="contact desktop-contact-container" id="desktop-contact">
-      <div class="corner__geometry desktop-none">
-        <img src="./images/corner_geometry.svg" alt="geometrical shape for background">
-      </div>
-
-      <h2 class="h2 desktop-h2">Get Started</h2>
-      <p class="contact__text desktop-contact-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-        <form action="https://formspree.io/f/xzbwkgkl" method="post" class="contact__form desktop-contact-form" id="form">
-          <label class="none-mobile desktop-label-name" for="name">Your name:</label><br>
-          <input type="text" required maxlength="30" placeholder="your name" name="name" id="user-name"
-            class="name desktop-form-name">
-          <label class="none-mobile desktop-label-email" for="email">Your email:</label><br>
-          <input type="email"  placeholder="your email"
-            name="email" id="email" class="email desktop-form-email">
-          <label class="none-mobile desktop-label-message" for="message">Message:</label><br>
-          <textarea type="text" maxlength="500" placeholder="Enter your message here..." name="message" id="message"
-            class="message desktop-message" required></textarea>
-            <div id="error"></div>
-          <input type="submit" value="Start Collaboration"
-            class="buttons contact__button animate__button desktop-form-button">
-        </form>
-    </section>
-  </main>
-
-  <section id="modal" class="card-hidden">
-    <div class="modal-bg">
-
-    <article class="modal-container">
-      <button onclick="closeModal(1)" class="close-button" type="button">&times;
-      </button>
-      <h2 class="modal-project-name" id="modal-project-name">
-        Project #0
-      </h2>
-      <ul class="modal-languages" id="modal-languages">
-        <li class="modal-links" id="modal-link" >HTML/CSS</li>
-        <li class="modal-links">Ruby on Rails</li>
-        <li class="modal-links">JavaScript</li>
-      </ul>
-      <div class="modal-image-container">
-        <img id="Picture" class="modal-project-image" src="images/Rectangle 21 (3).svg"
-          alt="Laptop with colored screen">
-      </div>
-      <div class="modal-image-preview">
-        <img src="images/Rectangle 21 (3).svg" alt="Laptop project 1">
-        <img src="images/Rectangle 21 (2).svg" alt="Laptop project 2">
-        <img src="images/Rectangle 46.svg" alt="Laptop project 3">
-        <img src="images/Rectangle 34.svg" alt="Laptop project 4">
-      </div>
-
-      <p class="modal-paragraph">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi vitae totam ut labore, iste illum cupiditate
-        magnam deleniti? Eveniet expedita adipisci explicabo nobis dolorum? Esse nesciunt assumenda id, maiores aliquam
-        tenetur doloremque explicabo eum, odio molestiae ea ipsum modi officia. <br><br>
-
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam odio quas expedita dolorum voluptate quibusdam
-        laborum deleniti ipsum sapiente tempora.
-      </p>
-      <div class="modal-button-container">
-        <button class="modal-link-button-1 modal-link-button">
-          <a id="project-live" target="_blank" href="https://github.com/Kashif-Saleem-Ghuman">See Live <img src="images/ic_link.svg" alt="link logo"></a>
-        </button> <br>
-        <button class="modal-link-button-2 modal-link-button">
-          <a  id="modal-project-source" target="_blank" href="https://github.com/Kashif-Saleem-Ghuman">See Source <img src="images/Vector.svg" alt="link logo"></a>
+        <button id="headline-btn" type="button" tabindex="0">
+          Start collaboration
         </button>
       </div>
-      <div class="modal-previous-next none-mobile">
-        <a id="modal-previous" href="#"><span class="arrow-1">&#8592</span> <span>Previous Project</span></a>
-        <a id="modal-next" href="#"> <span>Next Project</span><span class="arrow-2">&#8594</span></a>
+      <div class="headline-desk-img">
+        <img src="imgs/section-1.png" alt="background-image" />
       </div>
-      
-    </article>
-    
-  
-  </div>
-  </section>
+    </section>
+    <section class="geo-img">
+      <img src="imgs/image_geometry_2.png" alt="geometry" />
+    </section>
 
-  <footer class="footer desktop-footer">
-    <button class="footer__button desktopFooterButton">
-      <h3 class="footer__button__text desktop-none">Get my resume</h3>
-      <h3 class="none-mobile desktopFooterButtonText">Get my CV</h3>
-      <img class="footer__button__image desktop-none" src="./images/download_Resume.svg" alt="download my resume icon">
-      <a href="#" class="none-mobile"><img class=" none-mobile desktopFooterButtonImage" src="images/ic-link_teal.svg"
-          alt="cv download icon"></a>
-    </button>
+    <section class="projects grid-container" tabindex="0" id="Portfolio">
+      <h2 id="project-title" tabindex="0">Projects</h2>
 
-    <nav>
-      <ul class="socials desktop-socials">
-        <li href=""><img src="./images/stackoverflow.svg" alt="link to my stackoverflow icon" class="social"></li>
-        <li href=""><img src="./images/github.svg" alt="link to my github icon" class="social"></li>
-        <li href=""><img src="./images/twitter.svg" alt="link to my twitter" class="social"></li>
-        <li href=""><img src="./images/linkendin.svg" alt="link to my linkendin" class="social"></li>
-        <li href=""><img src="./images/m.svg" alt="go to my M" class="social"></li>
-        <li href=""><img src="./images/fingers.svg" alt="go to my M" class="social"></li>
-      </ul>
-    </nav>
-  </footer>
-  
-  <script src="script.js"></script>
-</body>
+      <div class="item4">
+        <img
+          src="imgs/item4.png"
+          alt="Colorful geometric shapes background-image"
+        />
+      </div>
 
+      <div class="item7">
+        <img
+          src="imgs/item7.png"
+          alt="Colorful geometric shapes background-image"
+        />
+      </div>
+    </section>
+
+    <section class="about" tabindex="0" id="About">
+      <div class="about-text" tabindex="0">
+        <h2 tabindex="0">About</h2>
+        <p tabindex="0">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ea eiusmod
+        </p>
+        <div class="about-btn" tabindex="0">
+          <p id="about-btn-text" tabindex="0">Get my CV</p>
+          <div class="about-btn-img">
+            <img src="imgs/ic_download.png" alt="download icon" />
+          </div>
+        </div>
+      </div>
+
+      <div class="tech-grid tech-flex" tabindex="0">
+        <div class="tech tech-1">
+          <div>
+            <h3 tabindex="0">Languages</h3>
+            <ul>
+              <li>JavaScript (ES5/ES6)</li>
+              <li>Ruby</li>
+              <li>HTML</li>
+              <li>CSS</li>
+            </ul>
+          </div>
+          <img src="imgs/tech-img-1.png" alt="hash background-image" />
+        </div>
+
+        <div class="tech tech-2" tabindex="0">
+          <div>
+            <h3 tabindex="0">Frameworks</h3>
+            <ul>
+              <li>Bootstrap</li>
+              <li>Ruby on rails</li>
+              <li>RSpec</li>
+              <li>Capibara</li>
+              <li>Selenium</li>
+            </ul>
+          </div>
+          <img src="imgs/tech-img-2.png" alt="geometric background-image" />
+        </div>
+
+        <div class="tech tech-3" tabindex="0">
+          <div>
+            <h3 tabindex="0">Skills</h3>
+            <ul>
+              <li>Codekit</li>
+              <li>Codepen</li>
+              <li>GitHub</li>
+              <li>GitLAb</li>
+              <li>Terminal</li>
+            </ul>
+          </div>
+          <img src="imgs/tech-img-3.png" alt="image of a light buld" />
+        </div>
+
+        <div class="tech-4 tech">
+          <img
+            src="imgs/image_dots.png"
+            alt="an image with several black dots"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Modal Popup -->
+
+    <!-- <section id="modal" class="card-hidden">
+      <article class="modal-container">
+        <button onclick="closeModal(1)" class="close-button" type="button">&times;
+        </button>
+        <h2 class="modal-project-name" id="modal-project-name">
+          Project name goes here
+        </h2>
+        <ul class="modal-languages" id="modal-languages">
+          <li class="modal-links" id="modal-link">HTML/CSS</li>
+          <li class="modal-links">Ruby on Rails</li>
+          <li class="modal-links">JavaScript</li>
+        </ul>
+        <div class="modal-image-container">
+          <img id="Picture" class="modal-project-image" src="imgs/prj-img-1.png" alt="Laptop with colored screen">
+        </div>
+        <div class="modal-image-preview">
+          <img src="imgs/prj-img-1.png" alt="Laptop project 1">
+          <img src="imgs/prj-img-1.png" alt="Laptop project 2">
+          <img src="imgs/prj-img-1.png" alt="Laptop project 3">
+          <img src="imgs/prj-img-1.png" alt="Laptop project 4">
+        </div>
+
+        <p class="modal-paragraph">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi vitae totam ut labore, iste illum cupiditate
+          magnam deleniti? Eveniet expedita adipisci explicabo nobis dolorum? Esse nesciunt assumenda id, maiores
+          aliquam
+          tenetur doloremque explicabo eum, odio molestiae ea ipsum modi officia. <br><br>
+
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam odio quas expedita dolorum voluptate quibusdam
+          laborum deleniti ipsum sapiente tempora. Provident ipsum iusto eum reiciendis pariatur praesentium nisi iste
+          doloremque.
+        </p>
+        <div class="modal-button-container">
+          <button class="modal-link-button-1 modal-link-button" id="project-live">
+            <a href="#" target="_blank">See Live <img src="imgs/ic_link.svg" alt="link logo"></a>
+          </button> <br>
+          <button class="modal-link-button-2 modal-link-button" id="modal-project-source">
+            <a href="#">See Source <img src="imgs/Vector.svg" alt="link logo"></a>
+          </button>
+        </div>
+        <div class="modal-previous-next">
+          <a id="modal-previous" href="#"><span class="arrow-1">&#8592</span> <span>Previous Project</span></a>
+          <a id="modal-next" href="#"> <span>Next Project</span><span class="arrow-2">&#8594</span></a>
+        </div>
+      </article>
+    </section> -->
+
+    <!-- Footer section  -->
+
+    <footer class="contact" tabindex="0" id="Contact">
+      <div class="mobile-footer-img">
+        <img src="imgs/footer-img.png" alt="a background-image" />
+      </div>
+      <div class="desk-footer-img">
+        <img src="imgs/footer-img-desk.png" alt="a background-image" />
+      </div>
+      <div class="contact-wrapper">
+        <h2 tabindex="0">Get started</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna.
+        </p>
+
+        <form
+          action="https://formspree.io/f/xzbwkgkl"
+          method="POST"
+          tabindex="0"
+        >
+          <div class="grid-container">
+            <div class="input_form">
+              <label for="">Your name</label>
+              <input
+                type="text"
+                id="name"
+                name="username"
+                maxlength="30"
+                placeholder="Full name"
+                required
+                tabindex="0"
+              />
+            </div>
+            <div class="input_form">
+              <label for="">Your email</label>
+              <input type="email" placeholder="Your email" required />
+            </div>
+            <div class="message">
+              <label for="">Message</label>
+              <textarea
+                name="message"
+                maxlength="500"
+                cols="30"
+                rows="10"
+                required
+                placeholder="Enter your message here.."
+                tabindex="0"
+              ></textarea>
+            </div>
+            <div>
+              <button type="button" tabindex="0">Start collaboration</button>
+            </div>
+          </div>
+        </form>
+      </div>
+
+      <div class="desk-footer-img-2">
+        <img src="imgs/footer-2.png" alt="a colourful background-image" />
+      </div>
+
+      <div class="contact-inf">
+        <div class="resume">
+          <p tabindex="0">Get my Resume</p>
+          <div class="res-img">
+            <img src="imgs/ic_link_teal.png" alt="a redirecting icon" />
+          </div>
+        </div>
+        <div class="social-media">
+          <div class="social-img">
+            <img
+              src="imgs/social-1.png"
+              alt="stackoverflow social icon"
+              tabindex="0"
+            />
+          </div>
+          <div class="social-img">
+            <img
+              src="imgs/social-2.png"
+              alt="GitHub social icon"
+              tabindex="0"
+            />
+          </div>
+          <div class="social-img">
+            <img
+              src="imgs/social-3.png"
+              alt="Twitter social icon"
+              tabindex="0"
+            />
+          </div>
+          <div class="social-img">
+            <img
+              src="imgs/social-4.png"
+              alt="LinkedIn social icon"
+              tabindex="0"
+            />
+          </div>
+          <div class="social-img">
+            <img
+              src="imgs/social-5.png"
+              alt="Medium social icon"
+              tabindex="0"
+            />
+          </div>
+          <div class="social-img">
+            <img
+              src="imgs/social-6.png"
+              alt="AngelList social icon"
+              tabindex="0"
+            />
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
 </html>
